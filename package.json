@@ -1,0 +1,33 @@
+{
+  "name": "sch_node",
+  "version": "1.0.0",
+  "description": "\"# sch_App_node\"",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon build/server.js",
+    "build": "babel src --out-dir build --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tundeusman0/sch_App_node.git"
+  },
+  "author": "Tunde Usman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tundeusman0/sch_App_node/issues"
+  },
+  "homepage": "https://github.com/tundeusman0/sch_App_node#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/register": "^7.4.0"
+  }
+}
