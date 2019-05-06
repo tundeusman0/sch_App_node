@@ -1,12 +1,24 @@
 import express from "express";
 import bodyParser from "body-parser";
-// import ejs from "ejs";
+import socketIO from "socket.io"
 
-const path = require('path')
+
+import path from "path";
+import http from "http";
 
 
 const app = express();
 const port = process.env.PORT || 3000
+const server = http.createServer(app);
+// socket.io for omit or broadcast
+const io = socketIO(server)
+
+io.on("connection",(socket)=>{
+    console.log("new user connected")
+    socket.on("disconnect", () => {
+        console.log("disconnected from server")
+    })
+})
 
 const viewPath = path.join(__dirname, '/../views')
 const publicPath = path.join(__dirname, '/../public')
@@ -34,6 +46,6 @@ app.get('/',(req,res)=>{
 })
 
 
-app.listen(port,()=>{
+server.listen(port,()=>{
     console.log(`app started at port ${port}`)
 })

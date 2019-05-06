@@ -4,15 +4,32 @@ var _express = _interopRequireDefault(require("express"));
 
 var _bodyParser = _interopRequireDefault(require("body-parser"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+var _socket = _interopRequireDefault(require("socket.io"));
 
-// import ejs from "ejs";
-var path = require('path');
+var _path = _interopRequireDefault(require("path"));
+
+var _http = _interopRequireDefault(require("http"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var app = (0, _express["default"])();
 var port = process.env.PORT || 3000;
-var viewPath = path.join(__dirname, '/../views');
-var publicPath = path.join(__dirname, '/../public'); // set view engine
+
+var server = _http["default"].createServer(app); // socket.io for omit or broadcast
+
+
+var io = (0, _socket["default"])(server);
+io.on("connection", function (socket) {
+  console.log("new user connected");
+  socket.on("disconnect", function () {
+    console.log("disconnected from server");
+  });
+});
+
+var viewPath = _path["default"].join(__dirname, '/../views');
+
+var publicPath = _path["default"].join(__dirname, '/../public'); // set view engine
+
 
 app.set('view engine', 'ejs');
 app.set('views', viewPath); // public files
@@ -32,6 +49,6 @@ app.use(_bodyParser["default"].json({
 app.get('/', function (req, res) {
   res.render("index");
 });
-app.listen(port, function () {
+server.listen(port, function () {
   console.log("app started at port ".concat(port));
 });
