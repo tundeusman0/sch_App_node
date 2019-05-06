@@ -1,0 +1,470 @@
+html{
+   background: #bdcccb4d;
+}
+div#User_page{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+div#user_page_left{
+    margin-left: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+
+}
+div.pad_right:before {
+  background: none;
+}
+.pad_right:after {
+  background: rgba(0, 0, 0, 0.384);
+  height: 2px;
+  margin-left: 25px;
+  flex: 1;
+  content: '';
+}
+.pad_right h3{
+  color: #11c4204d;
+
+}
+.pad_right {
+  display: flex;
+  align-items: center;
+    /* flex-wrap: wrap; */
+
+}
+div#user_page_right{
+    flex: 2;
+    margin-left: 10px;
+}
+
+div#profile_pix{
+    flex: 1;
+    margin: 10px 5px 10px 5px;
+    
+}
+div#profile_pix > img{
+    border-radius: 50px;
+    max-width: 100%;
+    max-height: 100%;
+}
+div#profile_pix > .fa-camera{
+    left: 350px;
+    color: #00f7bd;
+    font-size: 50px;
+    background: #d8f0ee34;
+    top: 200px;
+    cursor: pointer;
+    position: absolute;
+}
+div#user_sys_details{
+    flex: 1;
+}
+div#user_sys_skills{
+    flex: 1;
+}
+div.user_name{
+    padding: 10px;
+}
+div.user_name a{
+    color: rgba(124, 0, 0, 0.664);
+    margin-left: 150px;
+    background: #10717e75;
+    padding: 10px;
+}
+div.send_message{
+    padding: 10px;
+    cursor: pointer;
+    width: 120px;
+    margin-bottom: 92px;
+}
+div.tabs{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+div.show_tab{
+    display: none;
+    padding: 20px;
+    border-bottom: 3px solid #11c4204d;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+div.choose_course{
+    margin-left: 40px;
+}
+div.tab_info h3{
+    color: #11c4204d;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+div#courses{
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+div.print_courses{
+    flex-direction: column;
+
+}
+div.info_cont{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+span.info_title{
+    color: #2fc411d5;
+    margin-right: 50px;
+    margin-top: 20px;
+
+}
+span.info_detail{
+    margin-left: 100px;
+    max-width: 200px;
+    margin-top: 20px;
+    justify-items: left;
+    color: #a900f7;
+
+}
+div.abt_user{
+    margin:0 10px 0 10px;
+    cursor: pointer;
+
+}
+div.reg_courses{
+    margin: 0 10px 0 10px;
+    cursor: pointer;
+
+}
+div.courses{
+    margin: 0 10px 0 10px;
+    cursor: pointer;
+
+}
+div.result{
+    margin: 0 10px 0 10px;
+    cursor: pointer;
+
+}
+div.inboxes{
+    padding: 10px;
+}
+div.inboxes_header{
+    background: #11c4207a;
+    padding: 1px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+div.inbox_messages{
+    display: flex;
+    margin-bottom: 50px;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+div.inbox{
+    display: flex;
+    border-bottom: 1px solid #5de7687a;
+    transition: transform .5s;
+    cursor: pointer;
+    /* flex-wrap: wrap; */
+}
+div.inbox:hover{
+    transform: scale(1.03);
+
+
+}
+div.inbox_message p{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 400px;
+
+}
+div.delete_inbox{
+    margin-left: 5px;
+}
+div#inbox_mssg_view{
+    display: none;
+    padding: 2px;
+}
+
+div.back_to_inbox_messages{
+    cursor: pointer;
+
+}
+div.reply_to_inbox_messages{
+    cursor: pointer;
+}
+span.reply_close{
+    cursor: pointer;
+}
+div.inbox_mssg{
+    padding: 10px;
+}
+div#inbox_mssg_view_response{
+    display: none;
+    justify-content: space-between;
+    padding: 20px;
+}
+div.reply_inbox_messages{
+    display: none;
+}
+
+div#myModal{
+    display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  z-index: 9;
+  height: 60%;
+}
+.modal-content{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    height: 100%;
+    background: #fffafa;
+    border: 2px solid #acf091cc;
+    /* border: 1px solid blue; */
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+div#new_message{
+    /* width: 600px; */
+    /* display: flex; */
+    width: 100%;
+}
+
+.modal_close{
+    cursor: pointer;
+}
+div#new_message_header{
+    display: flex;
+    justify-content: space-between;
+    background: #0d886d;
+    padding: 10px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    color: #d8f0ee;
+}
+div#new_message_content{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    /* max-width: 800px; */
+    margin: 20px;
+
+}
+div#new_message_content > input{
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    margin: 10px;
+    height: 25px;
+    outline: none;
+    border-bottom-color: chocolate;
+    background: #8a9b9756;
+}
+div#new_message_content > textarea{
+    border: 0;
+    resize: none;
+    outline: none;
+}
+.modal-btn{
+    margin: 0 auto;
+    margin-top: 10px;
+    color: #9ce739;
+    background: #0d886d;
+    border: 0;
+    /* width: 70px; */
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+table.usertable{
+        max-width: 812px;
+    border-collapse: collapse;
+}
+tr.usertable_head {
+    border: 1px solid #0d886d;
+}
+tr.usertable_head > th{
+    padding: 10px;
+    border-bottom: 2px solid #0d886d;
+    
+}
+tr.usertable_head > td{
+    padding: 20px;
+    margin: 20px;
+    cursor: pointer;   
+}
+tr.usertable_head > td select{
+    height: 25px;
+    width: 245px;
+}
+.second_sitting{
+    display: none;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 800px;
+    padding: 20px;
+}
+.second_sitting > input{
+    height: 25px;
+}
+.second_sitting > label{
+    margin: 10px 0 5px 0;
+    color: #10717e;
+}
+#myForm h4{
+    color: red;
+}
+
+
+@media only screen and (max-width: 1024px){
+    div#profile_pix > .fa-camera{
+        top: 330px;
+    left: 289px;
+    font-size: 50px;
+    }
+    div#myModal{
+    top: 200px;
+    right: 50px;
+    bottom: 200px;
+    height: 35%;
+    }
+    tr.usertable_head > td select{
+    height: 25px;
+    width: 145px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 780px){
+    div#profile_pix > .fa-camera{
+        top: 360px;
+    left: 130px;
+    font-size: 20px;
+    }
+     div#myModal{
+    top: 200px;
+    right: 250px;
+    bottom: 200px;
+  height: 38%;
+}
+    tr.usertable_head > td select{
+        height: 25px;
+        width: 125px;
+    }
+    
+}
+@media only screen and (max-width: 767px){
+    div.user_name p{
+        display: flex;
+        flex-shrink: 0;
+
+    }
+    div.user_name{
+        width: 182px;
+        display: flex;
+        flex-shrink: 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    div.tabs{
+        flex-wrap: wrap;
+    }
+    div.show_tabs{
+        display: flex;
+    }
+    div.show_tab{
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    div.tab_info{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    span.info_detail{
+        margin-left: 0;
+    }
+    div.inboxes_header {
+        display: flex;
+    }
+    div.inbox_messages {
+        flex-wrap: wrap;
+    }
+    div.inbox{
+        flex-direction: column;
+    }
+    div.inbox_message p {
+        display: flex;
+        max-width: 160px;
+    }
+    table{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 310px;
+    }
+    tbody{
+        display: flex;
+        flex-direction: column;
+
+    }
+    div.info_cont {
+    display: flex;
+    flex-wrap: wrap;
+    width: 182px;
+    }
+    div#tab_click{
+        padding: 20px;
+    }
+    div.std_cinfo{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    tr.usertable_head {
+        display: flex;
+
+    }
+    tr.usertable_head > td {
+        padding: 10px;
+    }
+    table.usertable th, td {}
+    table.usertable th{
+        font-size: 10px;
+    }
+    table.usertable tr td{
+        display: flex;
+        text-align: left;
+        margin: 0;
+        padding-left: 8px;
+        font-size: 15px;
+    }
+    tr:nth-child(even){background-color: #f2f2f2}
+    div#profile_pix > .fa-camera{
+    left: 70px;
+    top: 270px;
+    font-size: 20px;
+    }
+    div#myModal{
+        top: 50px;
+        bottom: 50px;
+  height: 28%;
+
+    }
+    tr.usertable_head > td select{
+    height: 25px;
+    width: 125px;
+    }
+    div.user_name a{
+    padding: 0;
+    margin-left: 50px;
+    text-align: center;
+    }
+}

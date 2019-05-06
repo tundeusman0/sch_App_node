@@ -1,0 +1,120 @@
+<script>
+    const Faculties = {
+        "Languages": ["yoruba","english","math"],
+        "Sciences": ["computer Scince", "Agric", "math","Geology"], 
+        "Humanity": ["Art","History","Bus Admin"],
+    }
+    
+    window.onload = function () {
+            var faculty = document.getElementById("faculty"),
+                dept = document.getElementById("dept");
+
+            for (var facult in Faculties) {
+                faculty.options[faculty.options.length] = new Option(facult, facult);
+            }
+            faculty.onchange = function () {
+                dept.length = 1; // remove all options bar first
+                if (this.selectedIndex < 1) return; // done
+                Faculties[faculty.value].forEach(dist=>{
+                    var dis = dist
+                    dept.options[dept.options.length] = new Option(dis, dis);
+                })
+            }
+           
+    }
+    
+</script>
+</head>
+
+<body>
+    <form name="myform" id="myForm">
+        Select Faculty: 
+        <select name="faculty" required id="faculty" size="1">
+            <option value="" hidden selected="selected">Select Faculty</option>
+        </select>
+        <br>
+        <br>
+        Select Department: 
+        <select name="department" required id="dept" size="1">
+            <option value="" hidden selected="selected">Please select Faculty first</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" id="submit">
+    </form>
+
+        <div id="output">
+            <h1>No Such Record</h1>
+        </div>
+        <div class="yoruba" id="department" style="display:none">
+            <h1>Yoruba</h1>
+            <div id="manage_column_body1">Student Name</div>
+            <div id="manage_column_body1">Matric Num</div>
+            <div id="manage_column_body1">Email</div>
+            <div id="manage_column_body3">
+                <div id="manage_column_bodysub1">Edit</div>
+                <div id="manage_column_bodysub2">Remove</div>
+            </div>
+        </div>
+        <div class="english" id="department" style="display:none">
+            <h1>English</h1>
+            <div id="manage_column_body1">Tunde Usman</div>
+            <div id="manage_column_body1">11/03His024</div>
+            <div id="manage_column_body1">tundeUsman@gmail.com</div>
+            <div id="manage_column_body3">
+                <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                </a>
+                <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                </a>
+            </div>
+        </div>
+        <div class="math" id="department" style="display:none">
+            <h1>Math</h1>
+            <div id="manage_column_body1">Tunde Usman</div>
+            <div id="manage_column_body1">11/03pl025</div>
+            <div id="manage_column_body1">tundeUsman@gmail.com</div>
+            <div id="manage_column_body3">
+                <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                </a>
+                <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                </a>
+            </div>
+        </div>
+
+
+        <!-- <div class="manage_column_body">
+            <div id="manage_column_body1">Tunde Usman</div>
+            <div id="manage_column_body1">11/03Hm026</div>
+            <div id="manage_column_body1">tundeUsman@gmail.com</div>
+            <div id="manage_column_body3">
+                <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                </a>
+                <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                </a>
+            </div>
+        </div> -->
+<script>
+    const allDept = document.querySelectorAll("#department"); 
+    const form = document.getElementById("myForm");
+    const dept = document.getElementById("dept");
+    const output = document.getElementById("output");
+    
+console.log(allDept)
+    form.addEventListener("submit",(e)=>{
+        e.preventDefault()
+        for(let eachDept of allDept){
+            if(dept.value === eachDept.className){
+                allDept.forEach(dept=>dept.style.display="none")
+                eachDept.style.display = "block";
+                output.style.display = "none";
+
+            }
+    
+        }
+        
+    })
+
+</script>
+</body>
+
+</html>

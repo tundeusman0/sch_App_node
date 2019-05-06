@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lecturer PAGE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./../../public/css/style.css">
+
+    <link rel="stylesheet" type="text/css" media="all" href="./../css/users.css" />
+
+    <!-- <script src="main.js"></script> -->
+</head>
+
+<body>
+    <div id="User_page">
+
+        <div id="user_page_left">
+            <div id="profile_pix">
+                <img src="./../img/sch-library.jpg" id="output" alt="user_pix">
+                <i class="fas fa-camera"></i>
+                <input type="file" id="file1" style="display:none" onchange="showMyImage(this)">
+            </div>
+            <div id="user_sys_details">
+                <div class="pad_right">
+                    <h3>SCHOOL DETAILS</h3>
+                </div>
+                <div>
+                    <h3>Faculty of Physical Science</h3>
+                </div>
+                <div>
+                    <h3>Year of Entry 2011</h3>
+                </div>
+                <div>
+                    <h3>Department of Computer Science</h3>
+                </div>
+            </div>
+            <div id="user_sys_skills">
+                <div class="pad_right">
+                    <h3>SKILLS</h3>
+                </div>
+                <ul>
+                    <ol>HTML</ol>
+                    <ol>CSS</ol>
+                    <ol>JAVASCRIPT</ol>
+                    <ol>NODE JS</ol>
+                </ul>
+            </div>
+
+        </div>
+
+        <div id="user_page_right">
+            <div class="user_name">
+                <h3>Dr. Idowu Usman</h3>
+                <p>Department of Computer Science</p>
+                <p>11/03cs024</p>
+            </div>
+            <div class="send_message">
+                <i class="fas fa-envelope"></i> Send Message
+            </div>
+            <div class="tabs">
+                <div class="abt_user" id="tab_click">
+                    <i class="fas fa-check"></i> About
+                </div>
+                <div class="reg_courses" id="tab_click">
+                    <i class="fas fa-registered"></i> COURSES RESULTS
+                </div>
+                
+                <div class="result" id="tab_click">
+                    <i class="fas fa-trophy"></i> RESULT
+                </div>
+
+                <div class="result" id="tab_click">
+                    <i class="fas fa-user"></i> STUDENTS
+                </div>
+            </div>
+            <hr>
+
+            <div class="show_tabs">
+
+                <div class="show_tab" style="display:block">
+                    <div class="tab_info">
+                        <h3>CONTACT INFORMATION</h3>
+                        <div>
+                            <div class="info_cont">
+                                <span class="info_title">Phone :</span>
+                                <span class="info_detail">08038062989</span>
+                            </div>
+                            <div class="info_cont">
+                                <span class="info_title">Address :</span>
+                                <span class="info_detail">
+                                    No 4 Abdulazeez attah road Oja Oba Ilorin Kwara State
+                                </span>
+                            </div>
+                            <div class="info_cont">
+                                <span class="info_title">Email :</span>
+                                <span class="info_detail">tundeusman@gmail.com</span>
+                            </div>
+                            <div class="info_cont">
+                                <span class="info_title">Site :</span>
+                                <span class="info_detail">tundeusman.io</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab_info">
+                        <h3>BASIC INFORMATION</h3>
+                        <div>
+                            <div class="info_cont">
+                                <span class="info_title">BIRTHDAY :</span>
+                                <span class="info_detail">Augst 1st 2003</span>
+                            </div>
+                            <div class="info_cont">
+                                <span class="info_title">GENDER :</span>
+                                <span class="info_detail">
+                                    Male
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="show_tab">
+
+                    <div class="tab_info">
+                        <h3>COURSES RESULTS</h3>
+                    </div>
+
+                    <form name="myform" id="myForm">
+                        <label for="">Select Year:</label>
+                        <select name="faculty" required id="faculty" size="1">
+                            <option value="" hidden selected="selected">Select Year</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="">Select Course:</label>
+                        <select name="department" required id="dept" size="1">
+                            <option value="" hidden selected="selected">Please select Year first</option>
+                        </select>
+                        <br>
+                        <br>
+                        <button>Get Record</button>
+                    </form>
+
+                    <div id="courses" class="print_courses">
+                        <div>
+                            <h3>Department: Computer Science</h3>
+                            <h3>Faculty: Physical Science</h3>
+                            <h3>Academy Year: 2011/2012</h3>
+                            <h3>Academy Section: Harmattan Semester</h3>
+                            <h3>Academy Section: Harmattan Semester</h3>
+
+                        </div>
+                        <table class="usertable">
+                            <thead>
+                                <tr class="usertable_head">
+                                    <th>S/N</th>
+                                    <th>Course</th>
+                                    <th>Course code</th>
+                                    <th>Units</th>
+                                    <th>Signatary</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="usertable_head">
+                                    <td>1</td>
+                                    <td>Computer Arch</td>
+                                    <td>csc 101</td>
+                                    <td>5</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="usertable_head">
+                                    <td>2</td>
+                                    <td>Computer Arch</td>
+                                    <td>csc 101</td>
+                                    <td>5</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="usertable_head">
+                                    <td>3</td>
+                                    <td>Computer Arch</td>
+                                    <td>csc 101</td>
+                                    <td>5</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="usertable_head">
+                                    <td>4</td>
+                                    <td>Computer Arch</td>
+                                    <td>csc 101</td>
+                                    <td>5</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="usertable_head">
+                                    <td>Level Adviser sinature</td>
+                                    <td></td>
+                                    <td>Date</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="usertable_head">
+                                    <td>HOD sinature</td>
+                                    <td></td>
+                                    <td>Date</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="usertable_head">
+                                    <td>DEAN sinature</td>
+                                    <td></td>
+                                    <td>Date</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <button id="print" class="modal-btn">PRINT RESULT</button>
+
+                </div>
+
+                <div class="show_tab">
+                        <div class="tab_info">
+                            <h3>RESULT</h3>
+                            <div id="courses">
+                                <table class="usertable">
+                                    <thead>
+                                        <tr class="usertable_head">
+                                            <th>Course</th>
+                                            <th>Course code</th>
+                                            <th>Units</th>
+                                            <th>File</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="usertable_head">
+                                            <td>Computer Arch</td>
+                                            <td>csc 101</td>
+                                            <td>5</td>
+                                            <td>
+                                                <input type="file">
+                                            </td>
+                                        </tr>
+                                        <tr class="usertable_head">
+                                            <td>Computer Arch</td>
+                                            <td>csc 101</td>
+                                            <td>5</td>
+                                            <td>
+                                                <input type="file">
+                                            </td>
+                                        </tr>
+                                        <tr class="usertable_head">
+                                            <td>Computer Arch</td>
+                                            <td>csc 101</td>
+                                            <td>5</td>
+                                            <td>
+                                                <input type="file">
+                                            </td>
+                                        </tr>
+                                        <tr class="usertable_head">
+                                            <td>Computer Arch</td>
+                                            <td>csc 101</td>
+                                            <td>5</td>
+                                            <td>
+                                                <input type="file">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                            <button class="modal-btn">UPLOAD RESULT</button>
+                        </div>
+                </div>
+
+
+                <div class="show_tab">
+                
+                    <div class="tab_info">
+                        <h3>STUDENTS RECORD</h3>
+                    </div>
+                
+                    <div id="register">
+                        <form name="myform" id="myForm">
+                            <label for="">Select Faculty:</label>
+                            <select name="faculty" required id="faculty" size="1">
+                                <option value="" hidden selected="selected">Select Faculty</option>
+                            </select>
+                            <br>
+                            <br>
+                            <label for="">Select Department:</label>
+                            <select name="department" required id="dept" size="1">
+                                <option value="" hidden selected="selected">Please select Faculty first</option>
+                            </select>
+                            <br>
+                            <br>
+                            <button>Get Record</button>
+                            <!-- <input type="submit" id="submit"> -->
+                        </form>
+                    </div>
+                
+                    <div id="courses" class="print_courses">
+                        <div>
+                            <h3>Department: Computer Science</h3>
+                            <h3>Faculty: Physical Science</h3>
+                            <h3>Academy Year: 2011/2012</h3>
+                            <h3>Academy Section: Harmattan Semester</h3>
+                            <h3>Academy Section: Harmattan Semester</h3>
+                
+                        </div>
+                        <table class="usertable">
+                            <thead>
+                                <tr class="usertable_head">
+                                    <th>S/N</th>
+                                    <th>Course</th>
+                                    <th>Course code</th>
+                                    <th>Units</th>
+                                    <th>Signatary</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="usertable_head">
+                                    <td>1</td>
+                                    <td>Computer Arch</td>
+                                    <td>csc 101</td>
+                                    <td>5</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="usertable_head">
+                                    <td>2</td>
+                                    <td>Computer Arch</td>
+                                    <td>csc 101</td>
+                                    <td>5</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="usertable_head">
+                                    <td>3</td>
+                                    <td>Computer Arch</td>
+                                    <td>csc 101</td>
+                                    <td>5</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="usertable_head">
+                                    <td>4</td>
+                                    <td>Computer Arch</td>
+                                    <td>csc 101</td>
+                                    <td>5</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="usertable_head">
+                                    <td>Level Adviser sinature</td>
+                                    <td></td>
+                                    <td>Date</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="usertable_head">
+                                    <td>HOD sinature</td>
+                                    <td></td>
+                                    <td>Date</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="usertable_head">
+                                    <td>DEAN sinature</td>
+                                    <td></td>
+                                    <td>Date</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                
+                    </div>
+                    <button id="print" class="modal-btn">PRINT STUDENT LIST</button>
+                
+                </div>
+
+
+
+                <div class="inboxes">
+                    <div class="inboxes_header">
+                        <h4>Inbox</h4>
+                    </div>
+                    <div class="inbox_messages">
+                        <div class="inbox">
+                            <div class="inbox_title">
+                                <p>Messager Title</p>
+                            </div>
+                            <div class="inbox_title">
+                                <p>Message Title</p>
+                            </div>
+                            <div class="inbox_message">
+                                <p>This is the first message to be viewed so check thouroghly and good</p>
+                            </div>
+                            <div class="inbox_message_time">
+                                <p>11pm</p>
+                            </div>
+                            <div class="delete_inbox">
+                                <p>
+                                    <a href=""> <i class="fas fa-trash"></i> </a>
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="inbox">
+                            <div class="inbox_title">
+                                <p>Messager Title</p>
+                            </div>
+                            <div class="inbox_title">
+                                <p>Message Title</p>
+                            </div>
+                            <div class="inbox_message">
+                                <p>This is the first message to be viewed so check thouroghly and good</p>
+                            </div>
+                            <div class="inbox_message_time">
+                                <p>11pm</p>
+                            </div>
+                            <div class="delete_inbox">
+                                <p>
+                                    <a href=""> <i class="fas fa-trash"></i> </a>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="inbox_mssg_view_response">
+                    <div class="back_to_inbox_messages"><i class="fas fa-long-arrow-alt-left"></i></div>
+                    <div class="reply_to_inbox_messages"><i class="fas fa-reply"></i></div>
+                </div>
+
+                <div id="inbox_mssg_view">
+                    <!-- <div id="inbox_mssg_view_response">
+                    <div class="back_to_admin_messages"><i class="fas fa-long-arrow-alt-left"></i></div>
+                    <div class="reply_to_admin_messages"><i class="fas fa-reply"></i></div>
+                </div> -->
+                    <div class="inbox_mssg">
+                        <div class="inbox_mssg_title">Message title1</div>
+                        <div class="admin_messager_title_details">Messager title -- messager@200level</div>
+                        <div class="admin_messager_title">Messager title</div>
+                        <div class="admin_message_header">Hi Tunde</div>
+                        <div class="admin_message_body">
+                            <h3>This is the first message to be viewed so check thouroghly</h3>
+                            <h5>We recommend this job for you. Take a look and see if you want to apply.</h5>
+                            <p>Junior C# Software Developer in Cambridge</p>
+                            <ul>
+                                <li>MILTON (CB24)</li>
+                                <li>£25k - 32k per year + Benefits+Prospects</li>
+                                <li>Amazing Prospects Ltd</li>
+                                <li>Permanent</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="inbox_mssg_view">
+                    <!-- <div id="inbox_mssg_view_response">
+                    <div class="back_to_admin_messages"><i class="fas fa-long-arrow-alt-left"></i></div>
+                    <div class="reply_to_admin_messages"><i class="fas fa-reply"></i></div>
+                </div> -->
+                    <div class="inbox_mssg">
+                        <div class="inbox_mssg_title">Message title2</div>
+                        <div class="admin_messager_title_details">Messager title -- messager@200level</div>
+                        <div class="admin_messager_title">Messager title</div>
+                        <div class="admin_message_header">Hi Tunde</div>
+                        <div class="admin_message_body">
+                            <h3>This is the first message to be viewed so check thouroghly</h3>
+                            <h5>We recommend this job for you. Take a look and see if you want to apply.</h5>
+                            <p>Junior C# Software Developer in Cambridge</p>
+                            <ul>
+                                <li>MILTON (CB24)</li>
+                                <li>£25k - 32k per year + Benefits+Prospects</li>
+                                <li>Amazing Prospects Ltd</li>
+                                <li>Permanent</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <form action="/" class="modal-content">
+                        <div id="new_message">
+                            <div id="new_message_header">New Message
+                                <span class="modal_close">&times;</span>
+                            </div>
+                            <div id="new_message_content">
+                                <input type="email" placeholder="To" required>
+                                <input type="text" placeholder="subject" required>
+                                <textarea name="editor1" id="editor" cols="30" rows="10" required></textarea>
+                            </div>
+                            <button type="submit" class="modal-btn">Send</button>
+                        </div>
+                    </form>
+
+                </div>
+
+                <div id="reply_inbox_messages" style="display: none">
+                    <form action="/" class="modal-content">
+                        <div id="new_message">
+                            <div id="new_message_header">Reply Message
+                                <span class="reply_close">&times;</span>
+                            </div>
+                            <div id="new_message_content">
+                                <textarea name="editor1" id="editor" cols="30" rows="10" required></textarea>
+                            </div>
+                            <button type="submit" class="modal-btn">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="./../js/users.js"></script>
+    <script src="./../../public/js/editor.js"></script>
+</body>
+
+</html>

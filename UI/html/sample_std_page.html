@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>STUDENT PAGE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./../../public/css/style.css">
+
+    <link rel="stylesheet" type="text/css" media="all" href="./../css/users.css" />
+
+</head>
+
+<body>
+    <div id="User_page">
+
+        <div id="user_page_left">
+            <div id="profile_pix">
+                <img src="./../img/sch-library.jpg" id="output" alt="user_pix">
+                <i class="fas fa-camera"></i>
+                <input type="file" id="file1" style="display:none" onchange="showMyImage(this)">
+            </div>
+            <div id="user_sys_details">
+                <div class="pad_right">
+                    <h3>SCHOOL DETAILS</h3>
+                </div>
+                <div>
+                    <h3>Faculty of Physical Science</h3>
+                </div>
+                <div>
+                    <h3>Year of Entry 2011</h3>
+                </div>
+                <div>
+                    <h3>Department of Computer Science</h3>
+                </div>
+                <div class="pad_right">
+                    <h3>JAMB SCORE</h3>
+                </div>
+                <ul>
+                    <ol>225</ol>
+                </ul>
+                <div class="pad_right">
+                    <h3>O Level SCORE</h3>
+                </div>
+                <ul>
+                    <ol>English A1</ol>
+                    <ol>Maths A1</ol>
+                    <ol>IRS A1</ol>
+                    <ol>Yoruba A1</ol>
+
+                </ul>
+            </div>
+            <div id="user_sys_skills">
+                <div class="pad_right">
+                    <h3>SKILLS</h3>
+                </div>
+                <ul>
+                    <ol>HTML</ol>
+                    <ol>CSS</ol>
+                    <ol>JAVASCRIPT</ol>
+                    <ol>NODE JS</ol>
+                </ul>
+            </div>
+
+        </div>
+
+        <div id="user_page_right">
+            <div class="user_name">
+                <h3>TUNDE USMAN</h3>
+                <p>Department of Computer Science</p>
+                <p>11/03cs024</p>
+            </div>
+            <div class="user_name">
+                <a href="./../index.html">Sign Out</a>
+            </div>
+            <div class="send_message">
+                <i class="fas fa-envelope"></i> Send Message
+            </div>
+            <div class="tabs">
+                <div class="abt_user" id="tab_click">
+                    <i class="fas fa-check"></i> About
+                </div>
+                <div class="reg_courses" id="tab_click">
+                    <i class="fas fa-registered"></i> Registered Courses
+                </div>
+                <div class="courses" id="tab_click">
+                    <i class="fas fa-book"></i> Courses
+                </div>
+                <div class="result" id="tab_click">
+                    <i class="fas fa-trophy"></i> RESULT
+                </div>
+                <div class="result" id="tab_click">
+                    <i class="fas fa-user"></i> PROFILE
+                </div>
+            </div>
+            <hr>
+
+            <div class="show_tabs">
+
+                <div class="show_tab" style="display:block">
+                    <div class="tab_info">
+                        <h3>CONTACT INFORMATION</h3>
+                        <div>
+                            <div class="info_cont">
+                                <span class="info_title">Phone :</span>
+                                <span class="info_detail">08038062989</span>
+                            </div>
+                            <div class="info_cont">
+                                <span class="info_title">Address :</span>
+                                <span class="info_detail">
+                                    No 4 Abdulazeez attah road Oja Oba Ilorin Kwara State
+                                </span>
+                            </div>
+                            <div class="info_cont">
+                                <span class="info_title">Email :</span>
+                                <span class="info_detail">tundeusman@gmail.com</span>
+                            </div>
+                            <div class="info_cont">
+                                <span class="info_title">Site :</span>
+                                <span class="info_detail">tundeusman.io</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab_info">
+                        <h3>BASIC INFORMATION</h3>
+                        <div>
+                            <div class="info_cont">
+                                <span class="info_title">BIRTHDAY :</span>
+                                <span class="info_detail">Augst 1st 2003</span>
+                            </div>
+                            <div class="info_cont">
+                                <span class="info_title">GENDER :</span>
+                                <span class="info_detail">
+                                    Male
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="show_tab">
+
+                    <div class="tab_info">
+                        <h3>REGISTERED COURSES</h3>
+                    </div>
+
+                    <div id="courses" class="print_courses">
+                        <div>
+                            <h3>Matic Number: 11/03cs024</h3>
+                            <h3>Department: Computer Science</h3>
+                            <h3>Faculty: Physical Science</h3>
+                            <h3>Academy Year: 2011/2012</h3>
+                            <h3>Academy Section: Harmattan Semester</h3>
+
+                        </div>
+                        <table class="usertable">
+                            <thead>
+                                <tr class="usertable_head">
+                                    <th>S/N</th>
+                                    <th>Course</th>
+                                    <th>Course code</th>
+                                    <th>Units</th>
+                                    <th>Signatary</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="usertable_head">
+                                    <td>1</td>
+                                    <td>Computer Arch</td>
+                                    <td>csc 101</td>
+                                    <td>5</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="usertable_head">
+                                    <td>2</td>
+                                    <td>Computer Arch</td>
+                                    <td>csc 101</td>
+                                    <td>5</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="usertable_head">
+                                    <td>3</td>
+                                    <td>Computer Arch</td>
+                                    <td>csc 101</td>
+                                    <td>5</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="usertable_head">
+                                    <td>4</td>
+                                    <td>Computer Arch</td>
+                                    <td>csc 101</td>
+                                    <td>5</td>
+                                    <td></td>
+                                </tr>
+                                <tr class="usertable_head">
+                                    <td>Level Adviser sinature</td>
+                                    <td></td>
+                                    <td>Date</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="usertable_head">
+                                    <td>HOD sinature</td>
+                                    <td></td>
+                                    <td>Date</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="usertable_head">
+                                    <td>DEAN sinature</td>
+                                    <td></td>
+                                    <td>Date</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <button id="print" class="modal-btn">PRINT COURSE FORM</button>
+
+                </div>
+
+                <div class="show_tab">
+                    <div class="tab_info">
+                        <h3>COURSES</h3>
+                        <h3>Drop course here</h3>
+                        <div id="courses">
+                            <table class="usertable">
+                                <thead>
+                                    <tr class="usertable_head">
+                                        <th>Course</th>
+                                        <th>Course code</th>
+                                        <th>Units</th>
+                                    </tr>
+                                </thead>
+                                <tbody ondrop="drop(event,this)" ondragover="allowDrop(event)">
+                                    <tr class="usertable_head" draggable="true" ondragstart="drag(event)" ondrop="return false"
+                                        ondragover="return false" id="drag1">
+                                        <td>Computer Arch</td>
+                                        <td>csc 101</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr class="usertable_head" draggable="true" ondragstart="drag(event)" ondrop="return false"
+                                        ondragover="return false" id="drag2">
+                                        <td>Computer Arch</td>
+                                        <td>csc 101</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr class="usertable_head" draggable="true" ondragstart="drag(event)" ondrop="return false"
+                                        ondragover="return false" id="drag3">
+                                        <td>Computer Arch</td>
+                                        <td>csc 101</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr class="usertable_head" draggable="true" ondragstart="drag(event)" ondrop="return false"
+                                        ondragover="return false" id="drag4">
+                                        <td>Computer Arch</td>
+                                        <td>csc 101</td>
+                                        <td>4</td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+
+                            <div class="choose_course">
+                                <h3>Choose from this List</h3>
+                                <table class="usertable">
+                                    <thead>
+                                        <tr class="usertable_head">
+                                            <th>Course</th>
+                                            <th>Course code</th>
+                                            <th>Units</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody ondrop="drop(event,this)" ondragover="allowDrop(event)">
+                                        <tr class="usertable_head" draggable="false" id="drag">
+                                            <td>Computer</td>
+                                            <td>csc</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="usertable_head" draggable="true" ondragstart="drag(event)" ondrop="return false"
+                                            ondragover="return false" id="drag5">
+                                            <td>Computer Arch</td>
+                                            <td>csc 101</td>
+                                            <td>6</td>
+                                        </tr>
+                                        <tr class="usertable_head" draggable="true" ondragstart="drag(event)" ondrop="return false"
+                                            ondragover="return false" id="drag6">
+                                            <td>Computer Arch</td>
+                                            <td>csc 101</td>
+                                            <td>7</td>
+                                        </tr>
+                                        <tr class="usertable_head" draggable="true" ondragstart="drag(event)" ondrop="return false"
+                                            ondragover="return false" id="drag7">
+                                            <td>Computer Arch</td>
+                                            <td>csc 101</td>
+                                            <td>8</td>
+                                        </tr>
+                                        <tr class="usertable_head" draggable="true" ondragstart="drag(event)" ondrop="return false"
+                                            ondragover="return false" id="drag8">
+                                            <td>Computer Arch</td>
+                                            <td>csc 101</td>
+                                            <td>9</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+                        <button class="modal-btn">Register</button>
+
+                    </div>
+                </div>
+
+                <div class="show_tab">
+                    <div class="tab_info">
+                        <h3>RESULT</h3>
+                        <div id="courses" class="results">
+                            <table class="usertable">
+                                <thead>
+                                    <tr class="usertable_head">
+                                        <th>Course</th>
+                                        <th>Course code</th>
+                                        <th>Units</th>
+                                        <th>Grade</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="usertable_head">
+                                        <td>Computer Arch</td>
+                                        <td>csc 101</td>
+                                        <td>5</td>
+                                        <td>90</td>
+                                    </tr>
+                                    <tr class="usertable_head">
+                                        <td>Computer Arch</td>
+                                        <td>csc 101</td>
+                                        <td>5</td>
+                                        <td>90</td>
+                                    </tr>
+                                    <tr class="usertable_head">
+                                        <td>Computer Arch</td>
+                                        <td>csc 101</td>
+                                        <td>5</td>
+                                        <td>90</td>
+                                    </tr>
+                                    <tr class="usertable_head">
+                                        <td>Computer Arch</td>
+                                        <td>csc 101</td>
+                                        <td>5</td>
+                                        <td>90</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <button class="modal-btn" id="print_result">PRINT RESULT</button>
+                    </div>
+                </div>
+
+                <div class="show_tab">
+                    <div id="register">
+                        <form method="POST" action="../html/admin.html" id="myForm">
+                            <h3>JAMB*</h3>
+
+                            <label for="">Jamb Number</label>
+                            <input type="text" required>
+                            <label for="">Jamb Score</label>
+                            <input type="text" required>
+
+                            <h3>O Level*</h3>
+                            <h4>How Many sittings?</h4>
+                            <label for="">Select numbers of sittings</label>
+                            <select name="" id="exams">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                            </select>
+
+                            <label for="">School Name *:</label>
+                            <input type="text" required>
+
+                            <label for="">Exam Number *:</label>
+                            <input type="text" required>
+
+                            <label for="">Exam Period *:</label>
+                            <input type="text" required>
+
+                            <label for="">Exam Type *:</label>
+                            <input type="text" required>
+
+                            <label for="">Exam Year *:</label>
+                            <input type="text" required>
+
+                            <label for="">FIRST SITTING</label>
+                            <table class="usertable">
+                                <thead>
+                                    <tr class="usertable_head">
+                                        <th>S/N</th>
+                                        <th>Subject Name</th>
+                                        <th>Grade</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="usertable_head">
+                                        <td>1</td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="" selected>English Language</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="">::Select Grade::</option>
+                                                <option value="">A1</option>
+                                                <option value="">B2</option>
+                                                <option value="">B3</option>
+                                                <option value="">C4</option>
+                                                <option value="">C5</option>
+                                                <option value="">C6</option>
+                                                <option value="">D7</option>
+                                                <option value="">E8</option>
+                                                <option value="">F9</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr class="usertable_head">
+                                        <td>2</td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="" selected>MATHEMATICS</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="">::Select Grade::</option>
+                                                <option value="">A1</option>
+                                                <option value="">B2</option>
+                                                <option value="">B3</option>
+                                                <option value="">C4</option>
+                                                <option value="">C5</option>
+                                                <option value="">C6</option>
+                                                <option value="">D7</option>
+                                                <option value="">E8</option>
+                                                <option value="">F9</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr class="usertable_head">
+                                        <td>3</td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="" selected>::Select Subject::</option>
+                                                <option value="">ACCOUNTING</option>
+                                                <option value="">AGRIC SCIENCE</option>
+                                                <option value="">BIOLOGY</option>
+                                                <option value="">CHEMISTRY</option>
+                                                <option value="">CIVIC EDUCATION</option>
+                                                <option value="">COMMERCE</option>
+                                                <option value="">CRK</option>
+                                                <option value="">ECONOMICS</option>
+                                                <option value="">FABRICATION & WELDING</option>
+                                                <option value="">FINE ART</option>
+                                                <option value="">FURTHER MATHEMATICS</option>
+                                                <option value="">GENERAL METAL WORK</option>
+                                                <option value="">GEOGRAPHY</option>
+                                                <option value="">GOVERNMENT</option>
+                                                <option value="">HAUSA</option>
+                                                <option value="">IGBO</option>
+                                                <option value="">IRK</option>
+                                                <option value="">LITERATURE IN ENGLISH</option>
+                                                <option value="">OFFICE PRACTICE</option>
+                                                <option value="">PHYSICS</option>
+                                                <option value="">TECHNICAL DRAWING</option>
+                                                <option value="">YORUBA</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="">::Select Grade::</option>
+                                                <option value="">A1</option>
+                                                <option value="">B2</option>
+                                                <option value="">B3</option>
+                                                <option value="">C4</option>
+                                                <option value="">C5</option>
+                                                <option value="">C6</option>
+                                                <option value="">D7</option>
+                                                <option value="">E8</option>
+                                                <option value="">F9</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr class="usertable_head">
+                                        <td>4</td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="" selected>::Select Subject::</option>
+                                                <option value="">ACCOUNTING</option>
+                                                <option value="">AGRIC SCIENCE</option>
+                                                <option value="">BIOLOGY</option>
+                                                <option value="">CHEMISTRY</option>
+                                                <option value="">CIVIC EDUCATION</option>
+                                                <option value="">COMMERCE</option>
+                                                <option value="">CRK</option>
+                                                <option value="">ECONOMICS</option>
+                                                <option value="">FABRICATION & WELDING</option>
+                                                <option value="">FINE ART</option>
+                                                <option value="">FURTHER MATHEMATICS</option>
+                                                <option value="">GENERAL METAL WORK</option>
+                                                <option value="">GEOGRAPHY</option>
+                                                <option value="">GOVERNMENT</option>
+                                                <option value="">HAUSA</option>
+                                                <option value="">IGBO</option>
+                                                <option value="">IRK</option>
+                                                <option value="">LITERATURE IN ENGLISH</option>
+                                                <option value="">OFFICE PRACTICE</option>
+                                                <option value="">PHYSICS</option>
+                                                <option value="">TECHNICAL DRAWING</option>
+                                                <option value="">YORUBA</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="">::Select Grade::</option>
+                                                <option value="">A1</option>
+                                                <option value="">B2</option>
+                                                <option value="">B3</option>
+                                                <option value="">C4</option>
+                                                <option value="">C5</option>
+                                                <option value="">C6</option>
+                                                <option value="">D7</option>
+                                                <option value="">E8</option>
+                                                <option value="">F9</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr class="usertable_head">
+                                        <td>5</td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="" selected>::Select Subject::</option>
+                                                <option value="">ACCOUNTING</option>
+                                                <option value="">AGRIC SCIENCE</option>
+                                                <option value="">BIOLOGY</option>
+                                                <option value="">CHEMISTRY</option>
+                                                <option value="">CIVIC EDUCATION</option>
+                                                <option value="">COMMERCE</option>
+                                                <option value="">CRK</option>
+                                                <option value="">ECONOMICS</option>
+                                                <option value="">FABRICATION & WELDING</option>
+                                                <option value="">FINE ART</option>
+                                                <option value="">FURTHER MATHEMATICS</option>
+                                                <option value="">GENERAL METAL WORK</option>
+                                                <option value="">GEOGRAPHY</option>
+                                                <option value="">GOVERNMENT</option>
+                                                <option value="">HAUSA</option>
+                                                <option value="">IGBO</option>
+                                                <option value="">IRK</option>
+                                                <option value="">LITERATURE IN ENGLISH</option>
+                                                <option value="">OFFICE PRACTICE</option>
+                                                <option value="">PHYSICS</option>
+                                                <option value="">TECHNICAL DRAWING</option>
+                                                <option value="">YORUBA</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="">::Select Grade::</option>
+                                                <option value="">A1</option>
+                                                <option value="">B2</option>
+                                                <option value="">B3</option>
+                                                <option value="">C4</option>
+                                                <option value="">C5</option>
+                                                <option value="">C6</option>
+                                                <option value="">D7</option>
+                                                <option value="">E8</option>
+                                                <option value="">F9</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr class="usertable_head">
+                                        <td>6</td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="" selected>::Select Subject::</option>
+                                                <option value="">ACCOUNTING</option>
+                                                <option value="">AGRIC SCIENCE</option>
+                                                <option value="">BIOLOGY</option>
+                                                <option value="">CHEMISTRY</option>
+                                                <option value="">CIVIC EDUCATION</option>
+                                                <option value="">COMMERCE</option>
+                                                <option value="">CRK</option>
+                                                <option value="">ECONOMICS</option>
+                                                <option value="">FABRICATION & WELDING</option>
+                                                <option value="">FINE ART</option>
+                                                <option value="">FURTHER MATHEMATICS</option>
+                                                <option value="">GENERAL METAL WORK</option>
+                                                <option value="">GEOGRAPHY</option>
+                                                <option value="">GOVERNMENT</option>
+                                                <option value="">HAUSA</option>
+                                                <option value="">IGBO</option>
+                                                <option value="">IRK</option>
+                                                <option value="">LITERATURE IN ENGLISH</option>
+                                                <option value="">OFFICE PRACTICE</option>
+                                                <option value="">PHYSICS</option>
+                                                <option value="">TECHNICAL DRAWING</option>
+                                                <option value="">YORUBA</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="">::Select Grade::</option>
+                                                <option value="">A1</option>
+                                                <option value="">B2</option>
+                                                <option value="">B3</option>
+                                                <option value="">C4</option>
+                                                <option value="">C5</option>
+                                                <option value="">C6</option>
+                                                <option value="">D7</option>
+                                                <option value="">E8</option>
+                                                <option value="">F9</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr class="usertable_head">
+                                        <td>7</td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="" selected>::Select Subject::</option>
+                                                <option value="">ACCOUNTING</option>
+                                                <option value="">AGRIC SCIENCE</option>
+                                                <option value="">BIOLOGY</option>
+                                                <option value="">CHEMISTRY</option>
+                                                <option value="">CIVIC EDUCATION</option>
+                                                <option value="">COMMERCE</option>
+                                                <option value="">CRK</option>
+                                                <option value="">ECONOMICS</option>
+                                                <option value="">FABRICATION & WELDING</option>
+                                                <option value="">FINE ART</option>
+                                                <option value="">FURTHER MATHEMATICS</option>
+                                                <option value="">GENERAL METAL WORK</option>
+                                                <option value="">GEOGRAPHY</option>
+                                                <option value="">GOVERNMENT</option>
+                                                <option value="">HAUSA</option>
+                                                <option value="">IGBO</option>
+                                                <option value="">IRK</option>
+                                                <option value="">LITERATURE IN ENGLISH</option>
+                                                <option value="">OFFICE PRACTICE</option>
+                                                <option value="">PHYSICS</option>
+                                                <option value="">TECHNICAL DRAWING</option>
+                                                <option value="">YORUBA</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="">::Select Grade::</option>
+                                                <option value="">A1</option>
+                                                <option value="">B2</option>
+                                                <option value="">B3</option>
+                                                <option value="">C4</option>
+                                                <option value="">C5</option>
+                                                <option value="">C6</option>
+                                                <option value="">D7</option>
+                                                <option value="">E8</option>
+                                                <option value="">F9</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr class="usertable_head">
+                                        <td>8</td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="" selected>::Select Subject::</option>
+                                                <option value="">ACCOUNTING</option>
+                                                <option value="">AGRIC SCIENCE</option>
+                                                <option value="">BIOLOGY</option>
+                                                <option value="">CHEMISTRY</option>
+                                                <option value="">CIVIC EDUCATION</option>
+                                                <option value="">COMMERCE</option>
+                                                <option value="">CRK</option>
+                                                <option value="">ECONOMICS</option>
+                                                <option value="">FABRICATION & WELDING</option>
+                                                <option value="">FINE ART</option>
+                                                <option value="">FURTHER MATHEMATICS</option>
+                                                <option value="">GENERAL METAL WORK</option>
+                                                <option value="">GEOGRAPHY</option>
+                                                <option value="">GOVERNMENT</option>
+                                                <option value="">HAUSA</option>
+                                                <option value="">IGBO</option>
+                                                <option value="">IRK</option>
+                                                <option value="">LITERATURE IN ENGLISH</option>
+                                                <option value="">OFFICE PRACTICE</option>
+                                                <option value="">PHYSICS</option>
+                                                <option value="">TECHNICAL DRAWING</option>
+                                                <option value="">YORUBA</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="">::Select Grade::</option>
+                                                <option value="">A1</option>
+                                                <option value="">B2</option>
+                                                <option value="">B3</option>
+                                                <option value="">C4</option>
+                                                <option value="">C5</option>
+                                                <option value="">C6</option>
+                                                <option value="">D7</option>
+                                                <option value="">E8</option>
+                                                <option value="">F9</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr class="usertable_head">
+                                        <td>9</td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="" selected>::Select Subject::</option>
+                                                <option value="">ACCOUNTING</option>
+                                                <option value="">AGRIC SCIENCE</option>
+                                                <option value="">BIOLOGY</option>
+                                                <option value="">CHEMISTRY</option>
+                                                <option value="">CIVIC EDUCATION</option>
+                                                <option value="">COMMERCE</option>
+                                                <option value="">CRK</option>
+                                                <option value="">ECONOMICS</option>
+                                                <option value="">FABRICATION & WELDING</option>
+                                                <option value="">FINE ART</option>
+                                                <option value="">FURTHER MATHEMATICS</option>
+                                                <option value="">GENERAL METAL WORK</option>
+                                                <option value="">GEOGRAPHY</option>
+                                                <option value="">GOVERNMENT</option>
+                                                <option value="">HAUSA</option>
+                                                <option value="">IGBO</option>
+                                                <option value="">IRK</option>
+                                                <option value="">LITERATURE IN ENGLISH</option>
+                                                <option value="">OFFICE PRACTICE</option>
+                                                <option value="">PHYSICS</option>
+                                                <option value="">TECHNICAL DRAWING</option>
+                                                <option value="">YORUBA</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="">::Select Grade::</option>
+                                                <option value="">A1</option>
+                                                <option value="">B2</option>
+                                                <option value="">B3</option>
+                                                <option value="">C4</option>
+                                                <option value="">C5</option>
+                                                <option value="">C6</option>
+                                                <option value="">D7</option>
+                                                <option value="">E8</option>
+                                                <option value="">F9</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="second_sitting" style="display:none">
+
+                                <label for="">SECOND SITTING</label>
+
+                                <label for="">School Name *:</label>
+                                <input type="text" required>
+
+                                <label for="">Exam Number *:</label>
+                                <input type="text" required>
+
+                                <label for="">Exam Period *:</label>
+                                <input type="text" required>
+
+                                <label for="">Exam Type *:</label>
+                                <input type="text" required>
+
+                                <label for="">Exam Year *:</label>
+                                <input type="text" required>
+
+                                <label for="">FIRST SITTING</label>
+                                <table class="usertable">
+                                    <thead>
+                                        <tr class="usertable_head">
+                                            <th>S/N</th>
+                                            <th>Subject Name</th>
+                                            <th>Grade</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="usertable_head">
+                                            <td>1</td>
+                                            <td>
+                                                <select name="" id="">
+                                                    <option value="" selected>English Language</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select name="" id="">
+                                                    <option value="">::Select Grade::</option>
+                                                    <option value="">A1</option>
+                                                    <option value="">B2</option>
+                                                    <option value="">B3</option>
+                                                    <option value="">C4</option>
+                                                    <option value="">C5</option>
+                                                    <option value="">C6</option>
+                                                    <option value="">D7</option>
+                                                    <option value="">E8</option>
+                                                    <option value="">F9</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr class="usertable_head">
+                                            <td>2</td>
+                                            <td>
+                                                <select name="" id="">
+                                                    <option value="" selected>MATHEMATICS</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select name="" id="">
+                                                    <option value="">::Select Grade::</option>
+                                                    <option value="">A1</option>
+                                                    <option value="">B2</option>
+                                                    <option value="">B3</option>
+                                                    <option value="">C4</option>
+                                                    <option value="">C5</option>
+                                                    <option value="">C6</option>
+                                                    <option value="">D7</option>
+                                                    <option value="">E8</option>
+                                                    <option value="">F9</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr class="usertable_head">
+                                            <td>3</td>
+                                            <td>
+                                                <select name="" id="">
+                                                    <option value="" selected>::Select Subject::</option>
+                                                    <option value="">ACCOUNTING</option>
+                                                    <option value="">AGRIC SCIENCE</option>
+                                                    <option value="">BIOLOGY</option>
+                                                    <option value="">CHEMISTRY</option>
+                                                    <option value="">CIVIC EDUCATION</option>
+                                                    <option value="">COMMERCE</option>
+                                                    <option value="">CRK</option>
+                                                    <option value="">ECONOMICS</option>
+                                                    <option value="">FABRICATION & WELDING</option>
+                                                    <option value="">FINE ART</option>
+                                                    <option value="">FURTHER MATHEMATICS</option>
+                                                    <option value="">GENERAL METAL WORK</option>
+                                                    <option value="">GEOGRAPHY</option>
+                                                    <option value="">GOVERNMENT</option>
+                                                    <option value="">HAUSA</option>
+                                                    <option value="">IGBO</option>
+                                                    <option value="">IRK</option>
+                                                    <option value="">LITERATURE IN ENGLISH</option>
+                                                    <option value="">OFFICE PRACTICE</option>
+                                                    <option value="">PHYSICS</option>
+                                                    <option value="">TECHNICAL DRAWING</option>
+                                                    <option value="">YORUBA</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select name="" id="">
+                                                    <option value="">::Select Grade::</option>
+                                                    <option value="">A1</option>
+                                                    <option value="">B2</option>
+                                                    <option value="">B3</option>
+                                                    <option value="">C4</option>
+                                                    <option value="">C5</option>
+                                                    <option value="">C6</option>
+                                                    <option value="">D7</option>
+                                                    <option value="">E8</option>
+                                                    <option value="">F9</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr class="usertable_head">
+                                            <td>4</td>
+                                            <td>
+                                                <select name="" id="">
+                                                    <option value="" selected>::Select Subject::</option>
+                                                    <option value="">ACCOUNTING</option>
+                                                    <option value="">AGRIC SCIENCE</option>
+                                                    <option value="">BIOLOGY</option>
+                                                    <option value="">CHEMISTRY</option>
+                                                    <option value="">CIVIC EDUCATION</option>
+                                                    <option value="">COMMERCE</option>
+                                                    <option value="">CRK</option>
+                                                    <option value="">ECONOMICS</option>
+                                                    <option value="">FABRICATION & WELDING</option>
+                                                    <option value="">FINE ART</option>
+                                                    <option value="">FURTHER MATHEMATICS</option>
+                                                    <option value="">GENERAL METAL WORK</option>
+                                                    <option value="">GEOGRAPHY</option>
+                                                    <option value="">GOVERNMENT</option>
+                                                    <option value="">HAUSA</option>
+                                                    <option value="">IGBO</option>
+                                                    <option value="">IRK</option>
+                                                    <option value="">LITERATURE IN ENGLISH</option>
+                                                    <option value="">OFFICE PRACTICE</option>
+                                                    <option value="">PHYSICS</option>
+                                                    <option value="">TECHNICAL DRAWING</option>
+                                                    <option value="">YORUBA</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select name="" id="">
+                                                    <option value="">::Select Grade::</option>
+                                                    <option value="">A1</option>
+                                                    <option value="">B2</option>
+                                                    <option value="">B3</option>
+                                                    <option value="">C4</option>
+                                                    <option value="">C5</option>
+                                                    <option value="">C6</option>
+                                                    <option value="">D7</option>
+                                                    <option value="">E8</option>
+                                                    <option value="">F9</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr class="usertable_head">
+                                            <td>5</td>
+                                            <td>
+                                                <select name="" id="">
+                                                    <option value="" selected>::Select Subject::</option>
+                                                    <option value="">ACCOUNTING</option>
+                                                    <option value="">AGRIC SCIENCE</option>
+                                                    <option value="">BIOLOGY</option>
+                                                    <option value="">CHEMISTRY</option>
+                                                    <option value="">CIVIC EDUCATION</option>
+                                                    <option value="">COMMERCE</option>
+                                                    <option value="">CRK</option>
+                                                    <option value="">ECONOMICS</option>
+                                                    <option value="">FABRICATION & WELDING</option>
+                                                    <option value="">FINE ART</option>
+                                                    <option value="">FURTHER MATHEMATICS</option>
+                                                    <option value="">GENERAL METAL WORK</option>
+                                                    <option value="">GEOGRAPHY</option>
+                                                    <option value="">GOVERNMENT</option>
+                                                    <option value="">HAUSA</option>
+                                                    <option value="">IGBO</option>
+                                                    <option value="">IRK</option>
+                                                    <option value="">LITERATURE IN ENGLISH</option>
+                                                    <option value="">OFFICE PRACTICE</option>
+                                                    <option value="">PHYSICS</option>
+                                                    <option value="">TECHNICAL DRAWING</option>
+                                                    <option value="">YORUBA</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select name="" id="">
+                                                    <option value="">::Select Grade::</option>
+                                                    <option value="">A1</option>
+                                                    <option value="">B2</option>
+                                                    <option value="">B3</option>
+                                                    <option value="">C4</option>
+                                                    <option value="">C5</option>
+                                                    <option value="">C6</option>
+                                                    <option value="">D7</option>
+                                                    <option value="">E8</option>
+                                                    <option value="">F9</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr class="usertable_head">
+                                            <td>6</td>
+                                            <td>
+                                                <select name="" id="">
+                                                    <option value="" selected>::Select Subject::</option>
+                                                    <option value="">ACCOUNTING</option>
+                                                    <option value="">AGRIC SCIENCE</option>
+                                                    <option value="">BIOLOGY</option>
+                                                    <option value="">CHEMISTRY</option>
+                                                    <option value="">CIVIC EDUCATION</option>
+                                                    <option value="">COMMERCE</option>
+                                                    <option value="">CRK</option>
+                                                    <option value="">ECONOMICS</option>
+                                                    <option value="">FABRICATION & WELDING</option>
+                                                    <option value="">FINE ART</option>
+                                                    <option value="">FURTHER MATHEMATICS</option>
+                                                    <option value="">GENERAL METAL WORK</option>
+                                                    <option value="">GEOGRAPHY</option>
+                                                    <option value="">GOVERNMENT</option>
+                                                    <option value="">HAUSA</option>
+                                                    <option value="">IGBO</option>
+                                                    <option value="">IRK</option>
+                                                    <option value="">LITERATURE IN ENGLISH</option>
+                                                    <option value="">OFFICE PRACTICE</option>
+                                                    <option value="">PHYSICS</option>
+                                                    <option value="">TECHNICAL DRAWING</option>
+                                                    <option value="">YORUBA</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select name="" id="">
+                                                    <option value="">::Select Grade::</option>
+                                                    <option value="">A1</option>
+                                                    <option value="">B2</option>
+                                                    <option value="">B3</option>
+                                                    <option value="">C4</option>
+                                                    <option value="">C5</option>
+                                                    <option value="">C6</option>
+                                                    <option value="">D7</option>
+                                                    <option value="">E8</option>
+                                                    <option value="">F9</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr class="usertable_head">
+                                            <td>7</td>
+                                            <td>
+                                                <select name="" id="">
+                                                    <option value="" selected>::Select Subject::</option>
+                                                    <option value="">ACCOUNTING</option>
+                                                    <option value="">AGRIC SCIENCE</option>
+                                                    <option value="">BIOLOGY</option>
+                                                    <option value="">CHEMISTRY</option>
+                                                    <option value="">CIVIC EDUCATION</option>
+                                                    <option value="">COMMERCE</option>
+                                                    <option value="">CRK</option>
+                                                    <option value="">ECONOMICS</option>
+                                                    <option value="">FABRICATION & WELDING</option>
+                                                    <option value="">FINE ART</option>
+                                                    <option value="">FURTHER MATHEMATICS</option>
+                                                    <option value="">GENERAL METAL WORK</option>
+                                                    <option value="">GEOGRAPHY</option>
+                                                    <option value="">GOVERNMENT</option>
+                                                    <option value="">HAUSA</option>
+                                                    <option value="">IGBO</option>
+                                                    <option value="">IRK</option>
+                                                    <option value="">LITERATURE IN ENGLISH</option>
+                                                    <option value="">OFFICE PRACTICE</option>
+                                                    <option value="">PHYSICS</option>
+                                                    <option value="">TECHNICAL DRAWING</option>
+                                                    <option value="">YORUBA</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select name="" id="">
+                                                    <option value="">::Select Grade::</option>
+                                                    <option value="">A1</option>
+                                                    <option value="">B2</option>
+                                                    <option value="">B3</option>
+                                                    <option value="">C4</option>
+                                                    <option value="">C5</option>
+                                                    <option value="">C6</option>
+                                                    <option value="">D7</option>
+                                                    <option value="">E8</option>
+                                                    <option value="">F9</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr class="usertable_head">
+                                            <td>8</td>
+                                            <td>
+                                                <select name="" id="">
+                                                    <option value="" selected>::Select Subject::</option>
+                                                    <option value="">ACCOUNTING</option>
+                                                    <option value="">AGRIC SCIENCE</option>
+                                                    <option value="">BIOLOGY</option>
+                                                    <option value="">CHEMISTRY</option>
+                                                    <option value="">CIVIC EDUCATION</option>
+                                                    <option value="">COMMERCE</option>
+                                                    <option value="">CRK</option>
+                                                    <option value="">ECONOMICS</option>
+                                                    <option value="">FABRICATION & WELDING</option>
+                                                    <option value="">FINE ART</option>
+                                                    <option value="">FURTHER MATHEMATICS</option>
+                                                    <option value="">GENERAL METAL WORK</option>
+                                                    <option value="">GEOGRAPHY</option>
+                                                    <option value="">GOVERNMENT</option>
+                                                    <option value="">HAUSA</option>
+                                                    <option value="">IGBO</option>
+                                                    <option value="">IRK</option>
+                                                    <option value="">LITERATURE IN ENGLISH</option>
+                                                    <option value="">OFFICE PRACTICE</option>
+                                                    <option value="">PHYSICS</option>
+                                                    <option value="">TECHNICAL DRAWING</option>
+                                                    <option value="">YORUBA</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select name="" id="">
+                                                    <option value="">::Select Grade::</option>
+                                                    <option value="">A1</option>
+                                                    <option value="">B2</option>
+                                                    <option value="">B3</option>
+                                                    <option value="">C4</option>
+                                                    <option value="">C5</option>
+                                                    <option value="">C6</option>
+                                                    <option value="">D7</option>
+                                                    <option value="">E8</option>
+                                                    <option value="">F9</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr class="usertable_head">
+                                            <td>9</td>
+                                            <td>
+                                                <select name="" id="">
+                                                    <option value="" selected>::Select Subject::</option>
+                                                    <option value="">ACCOUNTING</option>
+                                                    <option value="">AGRIC SCIENCE</option>
+                                                    <option value="">BIOLOGY</option>
+                                                    <option value="">CHEMISTRY</option>
+                                                    <option value="">CIVIC EDUCATION</option>
+                                                    <option value="">COMMERCE</option>
+                                                    <option value="">CRK</option>
+                                                    <option value="">ECONOMICS</option>
+                                                    <option value="">FABRICATION & WELDING</option>
+                                                    <option value="">FINE ART</option>
+                                                    <option value="">FURTHER MATHEMATICS</option>
+                                                    <option value="">GENERAL METAL WORK</option>
+                                                    <option value="">GEOGRAPHY</option>
+                                                    <option value="">GOVERNMENT</option>
+                                                    <option value="">HAUSA</option>
+                                                    <option value="">IGBO</option>
+                                                    <option value="">IRK</option>
+                                                    <option value="">LITERATURE IN ENGLISH</option>
+                                                    <option value="">OFFICE PRACTICE</option>
+                                                    <option value="">PHYSICS</option>
+                                                    <option value="">TECHNICAL DRAWING</option>
+                                                    <option value="">YORUBA</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <select name="" id="">
+                                                    <option value="">::Select Grade::</option>
+                                                    <option value="">A1</option>
+                                                    <option value="">B2</option>
+                                                    <option value="">B3</option>
+                                                    <option value="">C4</option>
+                                                    <option value="">C5</option>
+                                                    <option value="">C6</option>
+                                                    <option value="">D7</option>
+                                                    <option value="">E8</option>
+                                                    <option value="">F9</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+
+                            <button type="submit">SUBMIT</button>
+                        </form>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="inboxes">
+                <div class="inboxes_header">
+                    <h4>Inbox</h4>
+                </div>
+                <div class="inbox_messages">
+                    <div class="inbox">
+                        <div class="inbox_title">
+                            <p>Messager Title</p>
+                        </div>
+                        <div class="inbox_title">
+                            <p>Message Title</p>
+                        </div>
+                        <div class="inbox_message">
+                            <p>This is the first message to be viewed so check thouroghly and good</p>
+                        </div>
+                        <div class="inbox_message_time">
+                            <p>11pm</p>
+                        </div>
+                        <div class="delete_inbox">
+                            <p>
+                                <a href=""> <i class="fas fa-trash"></i> </a>
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="inbox">
+                        <div class="inbox_title">
+                            <p>Messager Title</p>
+                        </div>
+                        <div class="inbox_title">
+                            <p>Message Title</p>
+                        </div>
+                        <div class="inbox_message">
+                            <p>This is the first message to be viewed so check thouroghly and good</p>
+                        </div>
+                        <div class="inbox_message_time">
+                            <p>11pm</p>
+                        </div>
+                        <div class="delete_inbox">
+                            <p>
+                                <a href=""> <i class="fas fa-trash"></i> </a>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="inbox_mssg_view_response">
+                <div class="back_to_inbox_messages"><i class="fas fa-long-arrow-alt-left"></i></div>
+                <div class="reply_to_inbox_messages"><i class="fas fa-reply"></i></div>
+            </div>
+
+            <div id="inbox_mssg_view">
+                <!-- <div id="inbox_mssg_view_response">
+                    <div class="back_to_admin_messages"><i class="fas fa-long-arrow-alt-left"></i></div>
+                    <div class="reply_to_admin_messages"><i class="fas fa-reply"></i></div>
+                </div> -->
+                <div class="inbox_mssg">
+                    <div class="inbox_mssg_title">Message title1</div>
+                    <div class="admin_messager_title_details">Messager title -- messager@200level</div>
+                    <div class="admin_messager_title">Messager title</div>
+                    <div class="admin_message_header">Hi Tunde</div>
+                    <div class="admin_message_body">
+                        <h3>This is the first message to be viewed so check thouroghly</h3>
+                        <h5>We recommend this job for you. Take a look and see if you want to apply.</h5>
+                        <p>Junior C# Software Developer in Cambridge</p>
+                        <ul>
+                            <li>MILTON (CB24)</li>
+                            <li>£25k - 32k per year + Benefits+Prospects</li>
+                            <li>Amazing Prospects Ltd</li>
+                            <li>Permanent</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="inbox_mssg_view">
+                <!-- <div id="inbox_mssg_view_response">
+                    <div class="back_to_admin_messages"><i class="fas fa-long-arrow-alt-left"></i></div>
+                    <div class="reply_to_admin_messages"><i class="fas fa-reply"></i></div>
+                </div> -->
+                <div class="inbox_mssg">
+                    <div class="inbox_mssg_title">Message title2</div>
+                    <div class="admin_messager_title_details">Messager title -- messager@200level</div>
+                    <div class="admin_messager_title">Messager title</div>
+                    <div class="admin_message_header">Hi Tunde</div>
+                    <div class="admin_message_body">
+                        <h3>This is the first message to be viewed so check thouroghly</h3>
+                        <h5>We recommend this job for you. Take a look and see if you want to apply.</h5>
+                        <p>Junior C# Software Developer in Cambridge</p>
+                        <ul>
+                            <li>MILTON (CB24)</li>
+                            <li>£25k - 32k per year + Benefits+Prospects</li>
+                            <li>Amazing Prospects Ltd</li>
+                            <li>Permanent</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <form action="/" class="modal-content">
+                    <div id="new_message">
+                        <div id="new_message_header">New Message
+                            <span class="modal_close">&times;</span>
+                        </div>
+                        <div id="new_message_content">
+                            <input type="email" placeholder="To" required>
+                            <input type="text" placeholder="subject" required>
+                            <textarea name="editor1" id="editor" cols="30" rows="10" required></textarea>
+                        </div>
+                        <button type="submit" class="modal-btn">Send</button>
+                    </div>
+                </form>
+
+            </div>
+
+            <div id="reply_inbox_messages" style="display: none">
+                <form action="/" class="modal-content">
+                    <div id="new_message">
+                        <div id="new_message_header">Reply Message
+                            <span class="reply_close">&times;</span>
+                        </div>
+                        <div id="new_message_content">
+                            <textarea name="editor1" id="editor" cols="30" rows="10" required></textarea>
+                        </div>
+                        <button type="submit" class="modal-btn">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+    <script src="./../js/users.js"></script>
+    <script src="./../../public/js/editor.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+        <script src="../../public/css/ckeditor/ckeditor.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../public/css/style.css">
+</head>
+<body>
+    <div id="nav">
+        <div id="mobile">
+    
+            <div id="logo">
+                <p>
+                    LOGO
+                </p>
+            </div>
+    
+    
+            <div id="nav-bar">
+                <div id="nav1">
+                    <ul>
+                        <li><a href="">Admission</a> |</li>
+                        <li><a href="">About</a> |</li>
+                        <li><a href="">News and Events |</a></li>
+                        <li><a href="">Research</a></li>
+                    </ul>
+                    <div id="toggle">
+                        <hr>
+                        <hr>
+                        <hr>
+                    </div>
+                </div>
+    
+                <div id="nav2">
+                    <ul>
+                        <li><a href="">Staff </a></li>
+                        <li><a href="">School students </a></li>
+                        <li><a href="">Alumni </a></li>
+                    </ul>
+                </div>
+    
+            </div>
+        </div>
+    
+    
+    
+    
+        <div id="nav3">
+            <div id="dropdown" class="nav3">
+                <h4>Colleges <i class="fas fa-angle-down"></i></h4>
+                <div class="show">
+                    <table class="table_nav">
+                        <thead>
+                            <tr>
+                                <th><a href="">Mathematics</a></th>
+                                <th><a href="">Management</a></th>
+                                <th><a href="">Agric</a></th>
+                                <th><a href="">Robotics</a></th>
+                            </tr>
+                            <tr>
+                                <th><a href="">Education</a></th>
+                                <th><a href="">Enginering</a></th>
+                                <th><a href="">Economics</a></th>
+                                <th><a href="">Metals</a></th>
+                            </tr>
+                            <tr>
+                                <th><a href="">Social Sceince</a></th>
+                                <th><a href="">Works</a></th>
+                                <th><a href="">Law</a></th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+    
+    
+            <div id="dropdown" class="nav3">
+                <h4> Departments <i class="fas fa-angle-down"></i></h4>
+    
+                <div class="show">
+                    <table class="table_nav">
+                        <thead>
+                            <td>
+                                <h2>Faculty of Sceince <i class="fas fa-angle-double-right"></i></h2>
+                            </td>
+                            <tr>
+                                <th><a href="">Mathematics</a></th>
+                                <th><a href="">Chemistry</a></th>
+                                <th><a href="">Agric</a></th>
+                            </tr>
+                            <tr>
+                                <th><a href="">Education</a></th>
+                                <th><a href="">Enginering</a></th>
+                                <th><a href="">MicroBiology</a></th>
+                            </tr>
+                            <tr>
+                                <th><a href="">Mech Eng</a></th>
+                                <th><a href="">Physics</a></th>
+                            </tr>
+                        </thead>
+    
+                        <thead>
+                            <td>
+                                <h2>Faculty of Management <i class="fas fa-angle-double-right"></i></h2>
+                            </td>
+                            <tr>
+                                <th><a href="">Accounting </a></th>
+                                <th><a href="">Management</a></th>
+                                <th><a href="">Business Admin</a></th>
+                            </tr>
+                            <tr>
+                                <th><a href="">Social Worker</a></th>
+                                <th><a href="">History</a></th>
+                                <th><a href="">Economics</a></th>
+                            </tr>
+                            <tr>
+                                <th><a href="">Social Sceince</a></th>
+                                <th><a href="">Yoruba</a></th>
+                            </tr>
+                        </thead>
+    
+                        <thead>
+                            <td>
+                                <h2>Faculty of Law <i class="fas fa-angle-double-right"></i></h2>
+                            </td>
+                            <tr>
+                                <th><a href="">Mathematics Law</a></th>
+                                <th><a href="">Management Law</a></th>
+                                <th><a href="">Agric Law</a></th>
+                            </tr>
+                            <tr>
+                                <th><a href="">Education Law</a></th>
+                                <th><a href="">Enginering Law</a></th>
+                                <th><a href="">Economics Law</a></th>
+                            </tr>
+                            <tr>
+                                <th><a href="">Social Sceince Law</a></th>
+                                <th><a href="">Physics Law</a></th>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <td>
+                                <h2>Faculty of Humanity <i class="fas fa-angle-double-right"></i></h2>
+                            </td>
+                            <tr>
+                                <th><a href="">Business Admin</a></th>
+                                <th><a href="">Liguestic</a></th>
+                                <th><a href="">Islamic Studies</a></th>
+                            </tr>
+                            <tr>
+                                <th><a href="">History</a></th>
+                                <th><a href="">Enginering</a></th>
+                                <th><a href="">Economics</a></th>
+                            </tr>
+                            <tr>
+                                <th><a href="">Yoruba</a></th>
+                                <th><a href="">French</a></th>
+                                <th><a href="">IFE</a></th>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <td>
+                                <h2>Faculty of Education <i class="fas fa-angle-double-right"></i></h2>
+                            </td>
+                            <tr>
+                                <th><a href="">Mathematics Edu</a></th>
+                                <th><a href="">Management Edu</a></th>
+                                <th><a href="">Agric Edu</a></th>
+                            </tr>
+                            <tr>
+                                <th><a href="">Education Edu</a></th>
+                                <th><a href="">Enginering Edu</a></th>
+                                <th><a href="">Economics Edu</a></th>
+                            </tr>
+                            <tr>
+                                <th><a href="">Social Sceince Edu</a></th>
+                                <th><a href="">Physics Edu</a></th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+            <div class="nav3 mobile-search">
+                <form action="/">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button style="width:37px;" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+    
+    
+        </div>
+    </div>
+
+    <div id="admin_page">
+        <div id="admin_side_bar">
+            <h3>SCHOOL ADMIN</h3>
+            <div id="admin_links">
+                <a href="#"><div id="admin_link">DashBoard</div></a>
+                <a href="#"><div id="admin_link">Manage Pages</div></a>
+                <a href="#"><div id="admin_link">Manage Carousel</div></a>
+                <a href="#"><div id="admin_link">Manage Event</div></a>
+                <a href="#"><div id="admin_link">Manage News</div></a>
+                <a href="#"><div id="admin_link">Manage Faculty</div></a>
+                <a href="#"><div id="admin_link">Manage Principal officers</div></a>
+                <!-- <a href="#"><div id="admin_link">Register Students</div></a>
+                <a href="#"><div id="admin_link">Register Non-lecturing Staff</div></a>
+                <a href="#"><div id="admin_link">Register Lecturing Staff</div></a> -->
+                <a href="#"><div id="admin_link">Manage Group Chat</div></a>
+                <a href="#"><div id="admin_link">Manage Students</div></a>
+                <a href="#"><div id="admin_link">Manage Non-lecturing Staff</div></a>
+                <a href="#"><div id="admin_link">Manage Lecturing Staff</div></a>
+                <!-- <a href="#"><div id="admin_link">Manage Alumni</div></a> -->
+                <!--<div id="admin_link"><a href="#">Print Id Card</a></div>-->
+            </div>
+
+        </div>
+        <div id="admin_main_bar">
+            <div id="dashboard" class="admin_show">
+                <div id="dashboard_welcome">
+                    <h1>Welcome Tunde</h1>
+                    <a href="./../index.html">Sign Out</a>
+                </div>
+                <h2>What would you like to do?</h2>
+                <div id="dashboard_header">
+                    <a href="">
+                        <div id="dashboard_header_link">
+                            <img src="../../public/img/pencil.png" alt="Sch-details">
+                            <p>Manage School Details</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div id="dashboard_header_link">
+                            <img src="../../public/img/newPage.jpg" alt="create_page">
+                            <p>Create a new Page</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div id="dashboard_header_link">
+                            <img src="../../public/img/eventClock.png" alt="">
+                            <p>Add an Event</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div id="dashboard_header_link">
+                            <img src="../../public/img/addNews.jpg" alt="">
+                            <p>Add News</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- <a href=""> -->
+                    <div id="compose_message">
+                        Compose Message
+                    </div>
+                <!-- </a> -->
+                <div id="dashboard_messages">
+                    <div id="dashboard_messages_header">
+                        Inbox Messages
+                    </div>
+                    <div id="dashboard_message">
+                        
+                            <div id="dashboard_message_data">
+                                <input type="checkbox">
+                                <div class="dashboard_messager_title">Messager title</div>
+                                <div class="dashboard_message_title">Message title - </div>
+                                <div class="dashboard_message">
+                                    <p>This is the first message to be viewed so check thouroghly and good</p>
+                                </div>
+                                <div class="dashboard_message_date">11pm</div>
+                                <div class="dashboard_message_delete"> <a href=""> <i class="fas fa-trash"></i> </a></div>
+                            </div>
+                        
+                    </div>
+                    <div id="dashboard_message">
+                        
+                            <div id="dashboard_message_data">
+                                <input type="checkbox">
+                                <div class="dashboard_messager_title">Messager title</div>
+                                <div class="dashboard_message_title">Message title - </div>
+                                <div class="dashboard_message">
+                                    <p>This is the first message to be viewed so check thouroghly and good</p>
+                                </div>
+                                <div class="dashboard_message_date">11pm</div>
+                                <div class="dashboard_message_delete"> <a href=""> <i class="fas fa-trash"></i> </a></div>
+                            </div>
+                        
+                    </div>
+                    <div id="dashboard_message">
+                        
+                            <div id="dashboard_message_data">
+                                <input type="checkbox">
+                                <div class="dashboard_messager_title">Messager title</div>
+                                <div class="dashboard_message_title">Message title - </div>
+                                <div class="dashboard_message">
+                                    <p>This is the first message to be viewed so check thouroghly and good</p>
+                                </div>
+                                <div class="dashboard_message_date">11pm</div>
+                                <div class="dashboard_message_delete"> <a href=""> <i class="fas fa-trash"></i> </a></div>
+                            </div>
+                        
+                    </div>
+                    <div id="dashboard_message">
+                            <div id="dashboard_message_data">
+                                <input type="checkbox">
+                                <div class="dashboard_messager_title">Messager title</div>
+                                <div class="dashboard_message_title">Message title - </div>
+                                <div class="dashboard_message">
+                                    <p>This is the first message to be viewed so check thouroghly and good</p>
+                                </div>
+                                <div class="dashboard_message_date">11pm</div>
+                                <div class="dashboard_message_delete"> <a href=""> <i class="fas fa-trash"></i></a></div>
+                            </div>
+                        
+                    </div>
+                    <div id="dashboard_message">
+                        
+                            <div id="dashboard_message_data">
+                                <input type="checkbox">
+                                <div class="dashboard_messager_title">Messager title</div>
+                                <div class="dashboard_message_title">Message title - </div>
+                                <div class="dashboard_message">
+                                    <p>This is the first message to be viewed so check thouroghly and good</p>
+                                </div>
+                                <div class="dashboard_message_date">11pm</div>
+                                <div class="dashboard_message_delete"><a href=""><i class="fas fa-trash"></i></a></div>
+                            </div>
+                        
+                    </div>
+                    <div id="dashboard_message">
+                        
+                            <div id="dashboard_message_data">
+                                <input type="checkbox">
+                                <div class="dashboard_messager_title">Messager title</div>
+                                <div class="dashboard_message_title">Message title - </div>
+                                <div class="dashboard_message">
+                                    <p>This is the first message to be viewed so check thouroghly and good</p>
+                                </div>
+                                <div class="dashboard_message_date">11pm</div>
+                                <div class="dashboard_message_delete"> <a href=""> <i class="fas fa-trash"></i></a></div>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div id="admin_messages">
+                <div id="admin_message_back">
+                    <div class="back_to_admin_messages"><i class="fas fa-long-arrow-alt-left"></i></div>
+                    <div class="reply_to_admin_messages"><i class="fas fa-reply"></i></div>
+                </div>
+                <div id="admin_message">
+                    <!-- <div id="admin_message_back">
+                        <div class="back_to_admin_messages"><i class="fas fa-long-arrow-alt-left"></i></div>
+                        <div class="reply_to_admin_messages"><i class="fas fa-reply"></i></div>
+                    </div> -->
+                    <div id="admin_messages_title">Message title1</div>
+                    <div id="admin_messager_title_details">Messager title -- messager@200level</div>
+                    <div id="admin_messager_title">Messager title</div>
+                    <div id="admin_message_header">Hi Tunde</div>
+                    <div id="admin_message_body">
+                        <h3>This is the first message to be viewed so check thouroghly</h3>
+                        <h5>We recommend this job for you. Take a look and see if you want to apply.</h5>
+                        <p>Junior C# Software Developer in Cambridge</p>
+                        <ul>
+                            <li>MILTON (CB24)</li>
+                            <li>£25k - 32k per year + Benefits+Prospects</li>
+                            <li>Amazing Prospects Ltd</li>
+                            <li>Permanent</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="admin_message">
+                    <!-- <div id="admin_message_back">
+                        <div class="back_to_admin_messages"><i class="fas fa-long-arrow-alt-left"></i></div>
+                        <div class="reply_to_admin_messages"><i class="fas fa-reply"></i></div>
+                    </div> -->
+                    <div id="admin_messages_title">Message title2</div>
+                    <div id="admin_messager_title_details">Messager title -- messager@200level</div>
+                    <div id="admin_messager_title">Messager title</div>
+                    <div id="admin_message_header">Hi Tunde</div>
+                    <div id="admin_message_body">
+                        <h3>This is the first message to be viewed so check thouroghly</h3>
+                        <h5>We recommend this job for you. Take a look and see if you want to apply.</h5>
+                        <p>Junior C# Software Developer in Cambridge</p>
+                        <ul>
+                            <li>MILTON (CB24)</li>
+                            <li>£25k - 32k per year + Benefits+Prospects</li>
+                            <li>Amazing Prospects Ltd</li>
+                            <li>Permanent</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="admin_message">
+                    <!-- <div id="admin_message_back">
+                        <div class="back_to_admin_messages"><i class="fas fa-long-arrow-alt-left"></i></div>
+                        <div class="reply_to_admin_messages"><i class="fas fa-reply"></i></div>
+                    </div> -->
+                    <div id="admin_messages_title">Message title3</div>
+                    <div id="admin_messager_title_details">Messager title -- messager@200level</div>
+                    <div id="admin_messager_title">Messager title</div>
+                    <div id="admin_message_header">Hi Tunde</div>
+                    <div id="admin_message_body">
+                        <h3>This is the first message to be viewed so check thouroghly</h3>
+                        <h5>We recommend this job for you. Take a look and see if you want to apply.</h5>
+                        <p>Junior C# Software Developer in Cambridge</p>
+                        <ul>
+                            <li>MILTON (CB24)</li>
+                            <li>£25k - 32k per year + Benefits+Prospects</li>
+                            <li>Amazing Prospects Ltd</li>
+                            <li>Permanent</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="admin_message">
+                    <!-- <div id="admin_message_back">
+                        <div class="back_to_admin_messages"><i class="fas fa-long-arrow-alt-left"></i></div>
+                        <div class="reply_to_admin_messages"><i class="fas fa-reply"></i></div>
+                    </div> -->
+                    <div id="admin_messages_title">Message title4</div>
+                    <div id="admin_messager_title_details">Messager title -- messager@200level</div>
+                    <div id="admin_messager_title">Messager title</div>
+                    <div id="admin_message_header">Hi Tunde</div>
+                    <div id="admin_message_body">
+                        <h3>This is the first message to be viewed so check thouroghly</h3>
+                        <h5>We recommend this job for you. Take a look and see if you want to apply.</h5>
+                        <p>Junior C# Software Developer in Cambridge</p>
+                        <ul>
+                            <li>MILTON (CB24)</li>
+                            <li>£25k - 32k per year + Benefits+Prospects</li>
+                            <li>Amazing Prospects Ltd</li>
+                            <li>Permanent</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="admin_message">
+                    <!-- <div id="admin_message_back">
+                        <div class="back_to_admin_messages"><i class="fas fa-long-arrow-alt-left"></i></div>
+                        <div class="reply_to_admin_messages"><i class="fas fa-reply"></i></div>
+                    </div> -->
+                    <div id="admin_messages_title">Message title5</div>
+                    <div id="admin_messager_title_details">Messager title -- messager@200level</div>
+                    <div id="admin_messager_title">Messager title</div>
+                    <div id="admin_message_header">Hi Tunde</div>
+                    <div id="admin_message_body">
+                        <h3>This is the first message to be viewed so check thouroghly</h3>
+                        <h5>We recommend this job for you. Take a look and see if you want to apply.</h5>
+                        <p>Junior C# Software Developer in Cambridge</p>
+                        <ul>
+                            <li>MILTON (CB24)</li>
+                            <li>£25k - 32k per year + Benefits+Prospects</li>
+                            <li>Amazing Prospects Ltd</li>
+                            <li>Permanent</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="admin_message">
+                    <!-- <div id="admin_message_back">
+                        <div class="back_to_admin_messages"><i class="fas fa-long-arrow-alt-left"></i></div>
+                        <div class="reply_to_admin_messages"><i class="fas fa-reply"></i></div>
+                    </div> -->
+                    <div id="admin_messages_title">Message title6</div>
+                    <div id="admin_messager_title_details">Messager title -- messager@200level</div>
+                    <div id="admin_messager_title">Messager title</div>
+                    <div id="admin_message_header">Hi Tunde</div>
+                    <div id="admin_message_body">
+                        <h3>This is the first message to be viewed so check thouroghly</h3>
+                        <h5>We recommend this job for you. Take a look and see if you want to apply.</h5>
+                        <p>Junior C# Software Developer in Cambridge</p>
+                        <ul>
+                            <li>MILTON (CB24)</li>
+                            <li>£25k - 32k per year + Benefits+Prospects</li>
+                            <li>Amazing Prospects Ltd</li>
+                            <li>Permanent</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="myModal" class="modal">
+                
+                    <!-- Modal content -->
+                    <form action="/" class="modal-content">
+                        <div id="new_message">
+                            <div id="new_message_header">New Message
+                                <span class="modal_close">&times;</span>
+                            </div>
+                            <div id="new_message_content">
+                                <input type="email" placeholder="To" required>
+                                <input type="text" placeholder="subject" required>
+                                <textarea name="editor1" id="editor" cols="30" rows="10" required></textarea>
+                            </div>
+                            <button type="submit" class="modal-btn">Send</button>
+                        </div>
+                    </form>
+                
+                </div>
+                <div id="reply_admin_messages">
+                    <form action="/" class="modal-content">
+                        <div id="new_message">
+                            <div id="new_message_header">Reply Message
+                                <span class="reply_close">&times;</span>
+                            </div>
+                            <div id="new_message_content">
+                                <textarea name="editor1" id="editor" cols="30" rows="10" required></textarea>
+                            </div>
+                            <button type="submit" class="modal-btn">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div id="" class="admin_show">
+                <div id="dashboard_welcome">
+                    <!-- <h1>Welcome Tunde</h1> -->
+                    <a href="./../index.html">Sign Out</a>
+                </div>
+                <a href="add_pages.html">Add Page</a>
+                <div id="manage_column">
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Name</div>
+                        <div id="manage_column_body2">Content</div>
+                        <div id="manage_column_body3">
+                            <div id="manage_column_bodysub1">Edit</div>
+                            <div id="manage_column_bodysub2">Remove</div>
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">About</div>
+                        <div id="manage_column_body2">
+                            <p>
+                                The simplest HTML5 validation feature to use is the required attribute — if you want to make an input mandatory, you
+                                can mark the element using this attribute. When this attribute is set, the form won't submit (and will display an error
+                                message) when the input is empty (the input will also be considered invalid).
+                                This is the Content
+                            </p>
+                            
+                        </div>
+                        <div id="manage_column_body3">
+                            <a href="" ><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">News And Event</div>
+                        <div id="manage_column_body2">
+                            <p>
+                                The simplest HTML5 validation feature to use is the required attribute — if you want to make an input
+                                mandatory.
+                            </p>
+                        </div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                    
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Research</div>
+                        <div id="manage_column_body2">
+                            <p>
+                                The simplest HTML5 validation feature to use is the required attribute.
+                            </p>
+                        </div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                    
+                        </div>
+                    </div>
+                </div>
+                <a href="./../index.html">Sign Out</a>
+
+            </div>
+            
+            <div id="" class="admin_show">
+                <div id="dashboard_welcome">
+                    <a href="./../index.html">Sign Out</a>
+                </div>
+                <a href="add_carousel.html">Add Carousel</a>
+                <div id="manage_column">
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Name</div>
+                        <div id="manage_column_body2">Content</div>
+                        <div id="manage_column_body2">Image</div>
+                        <div id="manage_column_body3">
+                            <div id="manage_column_bodysub1">Edit</div>
+                            <div id="manage_column_bodysub2">Remove</div>
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">About</div>
+                        <div id="manage_column_body2">
+                            <p>
+                                The simplest HTML5 validation feature to use is the required attribute — if you want to make an input
+                                mandatory, you
+                                can mark the element using this attribute. When this attribute is set, the form won't submit (and will
+                                display an error
+                                message) when the input is empty (the input will also be considered invalid).
+                                This is the Content
+                            </p>
+                        </div>
+                        <div id="manage_column_body2">
+                            <img src="" alt="carosel1">
+                        </div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">News And Event</div>
+                        <div id="manage_column_body2">
+                            <p>
+                                The simplest HTML5 validation feature to use is the required attribute — if you want to make an input
+                                mandatory.
+                            </p>
+                        </div>
+                        <div id="manage_column_body2">
+                            <img src="" alt="carosel2">
+                        </div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Research</div>
+                        <div id="manage_column_body2">
+                            <p>
+                                The simplest HTML5 validation feature to use is the required attribute.
+                            </p>
+                        </div>
+                        <div id="manage_column_body2">
+                            <img src="" alt="carosel3">
+                        </div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                
+                        </div>
+                    </div>
+                </div>
+                <a href="./../index.html">Sign Out</a>
+
+            </div>
+
+            <div id="" class="admin_show">
+                    <div id="dashboard_welcome">
+                        <a href="./../index.html">Sign Out</a>
+                    </div>
+                <a href="add_carousel.html">Add Event</a>
+                <div id="manage_column">
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Name</div>
+                        <div id="manage_column_body2">Content</div>
+                        <div id="manage_column_body2">Image</div>
+                        <div id="manage_column_body3">
+                            <div id="manage_column_bodysub1">Edit</div>
+                            <div id="manage_column_bodysub2">Remove</div>
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">About</div>
+                        <div id="manage_column_body2">
+                            <p>
+                                The simplest HTML5 validation feature to use is the required attribute — if you want to make an input
+                                mandatory, you
+                                can mark the element using this attribute. When this attribute is set, the form won't submit (and will
+                                display an error
+                                message) when the input is empty (the input will also be considered invalid).
+                                This is the Content
+                            </p>
+                            
+                        </div>
+                        <div id="manage_column_body2">
+                            <img src="" alt="carosel1">
+                        </div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">News And Event</div>
+                        <div id="manage_column_body2">
+                            <p>
+                                The simplest HTML5 validation feature to use is the required attribute — if you want to make an input
+                                mandatory.
+                            </p>
+                            
+                        </div>
+                        <div id="manage_column_body2">
+                            <img src="" alt="carosel2">
+                        </div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Research</div>
+                        <div id="manage_column_body2">
+                            <p>
+                                The simplest HTML5 validation feature to use is the required attribute.
+                            </p>
+                        </div>
+                        <div id="manage_column_body2">
+                            <img src="" alt="carosel3">
+                        </div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                
+                        </div>
+                    </div>
+                </div>
+                <a href="./../index.html">Sign Out</a>
+
+            </div>
+
+            <div id="" class="admin_show">
+                <div id="dashboard_welcome">
+                    <a href="./../index.html">Sign Out</a>
+                </div>
+                <a href="add_carousel.html">Add News</a>
+                <div id="manage_column">
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Name</div>
+                        <div id="manage_column_body2">Content</div>
+                        <div id="manage_column_body2">Image</div>
+                        <div id="manage_column_body3">
+                            <div id="manage_column_bodysub1">Edit</div>
+                            <div id="manage_column_bodysub2">Remove</div>
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">About</div>
+                        <div id="manage_column_body2">
+                            <p>
+                                The simplest HTML5 validation feature to use is the required attribute — if you want to make an input
+                                mandatory, you
+                                can mark the element using this attribute. When this attribute is set, the form won't submit (and will
+                                display an error
+                                message) when the input is empty (the input will also be considered invalid).
+                                This is the Content
+                            </p>
+                            
+                        </div>
+                        <div id="manage_column_body2">
+                            <img src="../../public/img/pencilbook.jpg" alt="carosel3">
+                        </div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">News And Event</div>
+                        <div id="manage_column_body2">
+                            <p>
+                                The simplest HTML5 validation feature to use is the required attribute — if you want to make an input
+                                mandatory.
+                            </p>
+                        </div>
+                        <div id="manage_column_body2">
+                            <img src="../../public/img/addnote.png" alt="carosel3">
+                        </div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Research</div>
+                        <div id="manage_column_body2">
+                            <p>
+                                The simplest HTML5 validation feature to use is the required attribute.
+                            </p>
+                        </div>
+                        <div id="manage_column_body2">
+                            <img src="../../public/img/addNews.jpg" alt="carosel3">
+                        </div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                
+                        </div>
+                    </div>
+                </div>
+                <a href="./../index.html">Sign Out</a>
+
+            </div>
+
+            <div id="" class="admin_show">
+                <div id="dashboard_welcome">
+                    <a href="./../index.html">Sign Out</a>
+                </div>
+                <a href="add_faculty.html">Add Faculty</a>
+                <div id="manage_column">
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Name</div>
+                        <div id="manage_column_body2">Departments</div>
+                        <div id="manage_column_body3">
+                            <div id="manage_column_bodysub1">Edit</div>
+                            <div id="manage_column_bodysub2">Remove</div>
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Sciences</div>
+                        <div id="manage_column_body2">
+                            Computer Science, Agric Science, Bio-Chem
+                        </div>
+                        
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+            
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Language</div>
+                        <div id="manage_column_body2">
+                            Yoruba, Arabic, Spanish, French
+                        </div>
+                        
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+            
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Humanity</div>
+                        <div id="manage_column_body2">
+                            Political Science, History,  hgvufvufvufv. uygiuguiy
+                        </div>
+                        
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+            
+                        </div>
+                    </div>
+                </div>
+                <a href="./../index.html">Sign Out</a>
+
+            </div>
+
+            <div id="" class="admin_show">
+                <div id="dashboard_welcome">
+                    <a href="./../index.html">Sign Out</a>
+                </div>
+                <div id="manage_column">
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Post</div>
+                        <div id="manage_column_body1">Name</div>
+                        <div id="manage_column_body2">Note</div>
+                        <div id="manage_column_body2">Image</div>
+                        <div id="manage_column_body3">
+                            <div id="manage_column_bodysub1">Edit</div>
+                            <!-- <div id="manage_column_bodysub2">Remove</div> -->
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Rector</div>
+                        <div id="manage_column_body1">Tunde Usman</div>
+                        <div id="manage_column_body2">
+                            <p>Hello Students this is it we are on guys</p>
+                        </div>
+                        <div id="manage_column_body2">
+                            <img src="../../public/img/pencil.png" alt="">
+                        </div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+            
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Duputy Rector</div>
+                        <div id="manage_column_body1">Tunde Usman2</div>
+                        <div id="manage_column_body2">
+                            <p>Hi This is your dupy rector we are good</p>
+                        </div>
+                        <div id="manage_column_body2">
+                            <img src="../../public/img/eventClock.png" alt="">
+                        </div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                    
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Register</div>
+                        <div id="manage_column_body1">Tunde Usman2</div>
+                        <div id="manage_column_body2">
+                            <p>Hi, I will be given you Admission</p>
+                        </div>
+                        <div id="manage_column_body2">
+                            <img src="../../public/img/eventClock.png" alt="">
+                        </div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                    
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Burser</div>
+                        <div id="manage_column_body1">Tunde Usman2</div>
+                        <div id="manage_column_body2">
+                            <p>Hi, I am your burser pay your money oh</p>
+                        </div>
+                        <div id="manage_column_body2">
+                            <img src="../../public/img/eventClock.png" alt="">
+                        </div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                    
+                        </div>
+                    </div>
+                </div>
+                <a href="./../index.html">Sign Out</a>
+
+            </div>
+
+            <div id="" class="admin_show">
+                <div id="dashboard_welcome">
+                    <a href="./../index.html">Sign Out</a>
+                </div>
+                <h2>Manage Group Chat</h2>
+                <form action="/">
+                    <div id="new_message_content">
+                        <label for="">Add Group Chat</label>
+                        <input type="text">
+                        <button type="submit" class="modal-btn admin_button">Create</button>
+                    </div>
+                </form>
+                <div id="manage_column">
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Name</div>
+                        <div id="manage_column_body2">Group Admin</div>
+                        <div id="manage_column_body3">
+                            <div id="manage_column_bodysub1">Edit</div>
+                            <div id="manage_column_bodysub2">Remove</div>
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Sciences</div>
+                        <div id="manage_column_body2">
+                            HOD Science
+                        </div>
+                
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Languages</div>
+                        <div id="manage_column_body2">
+                            HOD Languages
+                        </div>
+                
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Humanity</div>
+                        <div id="manage_column_body2">
+                            HOD Humanity
+                        </div>
+                
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                
+                        </div>
+                    </div>
+                </div>
+                <a href="./../index.html">Sign Out</a>
+
+            </div>
+
+            <div id="" class="admin_show">
+                <div id="dashboard_welcome">
+                    <a href="./../index.html">Sign Out</a>
+                </div>
+                <h2>Manage Students</h2>
+                <a href="add_student.html">Register Student</a>
+                <div class="nav3 adminSearch">
+                    <form action="/">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button style="width:37px;" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <div id="register">
+                    <form name="myform" id="myForm">
+                        <label for="">Select Faculty:</label>
+                        <select name="faculty" required id="faculty" size="1">
+                            <option value="" hidden selected="selected">Select Faculty</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="">Select Department:</label>
+                        <select name="department" required id="dept" size="1">
+                            <option value="" hidden selected="selected">Please select Faculty first</option>
+                        </select>
+                        <br>
+                        <br>
+                        <button>Get Record</button>
+                        <!-- <input type="submit" id="submit"> -->
+                    </form>
+                </div>
+                
+                <!-- languages -->
+                <!-- Yoruba -->
+                <div class="invisiblee">
+
+                <div id="output">
+                    <h1>No Such Record</h1>
+                </div>
+                <div id="record" class="Yoruba"  style="display:none">
+                    <h1>Languages</h1>
+                    <h1>Yoruba</h1>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Student Name</div>
+                        <div id="manage_column_body1">Matric Num</div>
+                        <div id="manage_column_body1">Email</div>
+                        <div id="manage_column_body3">
+                            <div id="manage_column_bodysub1">Edit</div>
+                            <div id="manage_column_bodysub2">Remove</div>
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Tunde Usman</div>
+                        <div id="manage_column_body1">11/03lg024</div>
+                        <div id="manage_column_body1">tundeUsman@gmail.com</div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Tunde Usman</div>
+                        <div id="manage_column_body1">11/03lg025</div>
+                        <div id="manage_column_body1">tundeUsman@gmail.com</div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Tunde Usman</div>
+                        <div id="manage_column_body1">11/03lg026</div>
+                        <div id="manage_column_body1">tundeUsman@gmail.com</div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Arabic -->
+                <div id="record" class="Arabic"  style="display:none">
+                    <h1>Languages</h1>
+                    <h1>Arabic</h1>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Student Name</div>
+                        <div id="manage_column_body1">Matric Num</div>
+                        <div id="manage_column_body1">Email</div>
+                        <div id="manage_column_body3">
+                            <div id="manage_column_bodysub1">Edit</div>
+                            <div id="manage_column_bodysub2">Remove</div>
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Tunde Usman</div>
+                        <div id="manage_column_body1">11/03lg024</div>
+                        <div id="manage_column_body1">tundeUsman@gmail.com</div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Tunde Usman</div>
+                        <div id="manage_column_body1">11/03lg025</div>
+                        <div id="manage_column_body1">tundeUsman@gmail.com</div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Tunde Usman</div>
+                        <div id="manage_column_body1">11/03lg026</div>
+                        <div id="manage_column_body1">tundeUsman@gmail.com</div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <!-- English -->
+                <div id="record" class="English"  style="display:none">
+                    <h1>Languages</h1>
+                    <hr>
+                    <h1>English</h1>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Student Name</div>
+                        <div id="manage_column_body1">Matric Num</div>
+                        <div id="manage_column_body1">Email</div>
+                        <div id="manage_column_body3">
+                            <div id="manage_column_bodysub1">Edit</div>
+                            <div id="manage_column_bodysub2">Remove</div>
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Tunde Usman</div>
+                        <div id="manage_column_body1">11/03lg024</div>
+                        <div id="manage_column_body1">tundeUsman@gmail.com</div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Tunde Usman</div>
+                        <div id="manage_column_body1">11/03lg025</div>
+                        <div id="manage_column_body1">tundeUsman@gmail.com</div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Tunde Usman</div>
+                        <div id="manage_column_body1">11/03lg026</div>
+                        <div id="manage_column_body1">tundeUsman@gmail.com</div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                        </div>
+                    </div>
+                
+                </div>
+
+
+                <!-- Sciences -->
+                <!-- Computer Science -->
+                <div id="record" class="Computer Science"  style="display:none">
+                    <h1>Sciences</h1>
+                    <h1>Computer Science</h1>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Student Name</div>
+                        <div id="manage_column_body1">Matric Num</div>
+                        <div id="manage_column_body1">Email</div>
+                        <div id="manage_column_body3">
+                            <div id="manage_column_bodysub1">Edit</div>
+                            <div id="manage_column_bodysub2">Remove</div>
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Tunde Usman</div>
+                        <div id="manage_column_body1">11/03Cs024</div>
+                        <div id="manage_column_body1">tundeUsman@gmail.com</div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Tunde Usman</div>
+                        <div id="manage_column_body1">11/03Sc025</div>
+                        <div id="manage_column_body1">tundeUsman@gmail.com</div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Tunde Usman</div>
+                        <div id="manage_column_body1">11/03Sc026</div>
+                        <div id="manage_column_body1">tundeUsman@gmail.com</div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <!-- bio-chem -->
+                <div id="record" class="Bio-chem"  style="display:none">
+                    <h1>Sciences</h1>
+                    <h1>Bio-chem</h1>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Student Name</div>
+                        <div id="manage_column_body1">Matric Num</div>
+                        <div id="manage_column_body1">Email</div>
+                        <div id="manage_column_body3">
+                            <div id="manage_column_bodysub1">Edit</div>
+                            <div id="manage_column_bodysub2">Remove</div>
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Tunde Usman</div>
+                        <div id="manage_column_body1">11/03Cs024</div>
+                        <div id="manage_column_body1">tundeUsman@gmail.com</div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Tunde Usman</div>
+                        <div id="manage_column_body1">11/03Sc025</div>
+                        <div id="manage_column_body1">tundeUsman@gmail.com</div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Tunde Usman</div>
+                        <div id="manage_column_body1">11/03Sc026</div>
+                        <div id="manage_column_body1">tundeUsman@gmail.com</div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <!-- Geology -->
+                <div id="record" class="Geology"  style="display:none">
+                    <h1>Sciences</h1>
+                    <h1>Geology</h1>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Student Name</div>
+                        <div id="manage_column_body1">Matric Num</div>
+                        <div id="manage_column_body1">Email</div>
+                        <div id="manage_column_body3">
+                            <div id="manage_column_bodysub1">Edit</div>
+                            <div id="manage_column_bodysub2">Remove</div>
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Tunde Usman</div>
+                        <div id="manage_column_body1">11/03Cs024</div>
+                        <div id="manage_column_body1">tundeUsman@gmail.com</div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Tunde Usman</div>
+                        <div id="manage_column_body1">11/03Sc025</div>
+                        <div id="manage_column_body1">tundeUsman@gmail.com</div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Tunde Usman</div>
+                        <div id="manage_column_body1">11/03Sc026</div>
+                        <div id="manage_column_body1">tundeUsman@gmail.com</div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <!-- Humanity -->
+                <!-- History -->
+                <div id="record" class="History"  style="display:none">
+                    <h1>Humanity</h1>
+                    <h1>History</h1>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Student Name</div>
+                        <div id="manage_column_body1">Matric Num</div>
+                        <div id="manage_column_body1">Email</div>
+                        <div id="manage_column_body3">
+                            <div id="manage_column_bodysub1">Edit</div>
+                            <div id="manage_column_bodysub2">Remove</div>
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Tunde Usman</div>
+                        <div id="manage_column_body1">11/03His024</div>
+                        <div id="manage_column_body1">tundeUsman@gmail.com</div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Tunde Usman</div>
+                        <div id="manage_column_body1">11/03pl025</div>
+                        <div id="manage_column_body1">tundeUsman@gmail.com</div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Tunde Usman</div>
+                        <div id="manage_column_body1">11/03Hm026</div>
+                        <div id="manage_column_body1">tundeUsman@gmail.com</div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <!-- political science -->
+                <div id="record" class="Political science"  style="display:none">
+                    <h1>Humanity</h1>
+                    <h1>Political science</h1>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Student Name</div>
+                        <div id="manage_column_body1">Matric Num</div>
+                        <div id="manage_column_body1">Email</div>
+                        <div id="manage_column_body3">
+                            <div id="manage_column_bodysub1">Edit</div>
+                            <div id="manage_column_bodysub2">Remove</div>
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Tunde Usman</div>
+                        <div id="manage_column_body1">11/03His024</div>
+                        <div id="manage_column_body1">tundeUsman@gmail.com</div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Tunde Usman</div>
+                        <div id="manage_column_body1">11/03pl025</div>
+                        <div id="manage_column_body1">tundeUsman@gmail.com</div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Tunde Usman</div>
+                        <div id="manage_column_body1">11/03Hm026</div>
+                        <div id="manage_column_body1">tundeUsman@gmail.com</div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <!-- Businness Admin -->
+                <div id="record" class="Business Admin"  style="display:none">
+                    <h1>Humanity</h1>
+                    <h1>Business Admin</h1>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Student Name</div>
+                        <div id="manage_column_body1">Matric Num</div>
+                        <div id="manage_column_body1">Email</div>
+                        <div id="manage_column_body3">
+                            <div id="manage_column_bodysub1">Edit</div>
+                            <div id="manage_column_bodysub2">Remove</div>
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Tunde Usman</div>
+                        <div id="manage_column_body1">11/03His024</div>
+                        <div id="manage_column_body1">tundeUsman@gmail.com</div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Tunde Usman</div>
+                        <div id="manage_column_body1">11/03pl025</div>
+                        <div id="manage_column_body1">tundeUsman@gmail.com</div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="manage_column_body">
+                        <div id="manage_column_body1">Tunde Usman</div>
+                        <div id="manage_column_body1">11/03Hm026</div>
+                        <div id="manage_column_body1">tundeUsman@gmail.com</div>
+                        <div id="manage_column_body3">
+                            <a href=""><i class="fas fa-edit" id="manage_column_bodysub1"></i>
+                            </a>
+                            <a href=""> <i class="fas fa-trash" id="manage_column_bodysub2"></i>
+                            </a>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <!-- invisble close tag -->
+                </div>
+                    
+
+
+                <a href="./../index.html">Sign Out</a>
+            </div>
+
+            <div id="" class="admin_show">
+                <div id="dashboard_welcome">
+                    <a href="./../index.html">Sign Out</a>
+                </div>
+                <h2>Manage Non-Lecturing Staff</h2>
+
+                <a href="#">Register Non-Lecturing Staff</a>
+                <div class="nav3 adminSearch">
+                    <form action="/">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button style="width:37px;" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+
+                <a href="./../index.html">Sign Out</a>
+            </div>
+
+            <div id="" class="admin_show">
+                <div id="dashboard_welcome">
+                    <a href="./../index.html">Sign Out</a>
+                </div>
+                <h2>Manage Lecturing Staff</h2>
+
+                <a href="#">Register Lecturing Staff</a>
+                <div class="nav3 adminSearch">
+                    <form action="/">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button style="width:37px;" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                
+                  
+                <a href="./../index.html">Sign Out</a>
+                
+            </div>
+                
+                
+            
+        </div>
+    </div>
+
+
+    <footer>
+        <div id="connect_social">
+            <i class="fab fa-facebook"> <a href="#"></a> </i>
+            <i class="fab fa-twitter"> <a href="#"></a> </i>
+            <i class="fab fa-linkedin"> <a href="#"></a> </i>
+            <i class="fab fa-instagram"> <a href="#"></a> </i>
+            <i class="fab fa-medium"> <a href="#"></a> </i>
+        </div>
+        <div id="links_footer">
+            <div id="footer_div">
+                <h2>
+                    INFORMATION ABOUT
+                </h2>
+                <a href="#">School University</a>
+                <a href="#">Fees and funding</a>
+                <a href="#">Sport at Oxford</a>
+                <a href="#">Staff</a>
+                <a href="#">Students</a>
+                <a href="#">Meet the Principal</a>
+                <a href="#">Meet the Principal</a>
+                <a href="#">Meet the Principal</a>
+                <a href="#">Meet the Principal</a>
+            </div>
+            <div id="footer_div">
+                <h2>
+                    INFORMATION FOR
+                </h2>
+                <a href="#">School University</a>
+                <a href="#">Fees and funding</a>
+                <a href="#">Sport at Oxford</a>
+                <a href="#">Staff</a>
+                <a href="#">Students</a>
+                <a href="#">Meet the Principal</a>
+                <a href="#">Meet the Principal</a>
+                <a href="#">Meet the Principal</a>
+                <a href="#">Meet the Principal</a>
+            </div>
+            <div id="footer_div">
+                <h2>
+                    QUICK LINKS
+                </h2>
+                <a href="#">Contact</a>
+                <a href="#">Jobs and vacancies</a>
+                <a href="#">Sport at Oxford</a>
+                <a href="#">Term dates</a>
+                <a href="#">Giving to Oxford</a>
+    
+            </div>
+        </div>
+        <div id="footer">
+            <div>
+                <a href="#">Developed By Tunde Usman</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../../public/js/editor.js"></script>
+    <script src="../../public/js/ui.js"></script>
+    <script src="../../public/js/admin.js"></script>
+    <script src="../../public/js/select_pick.js"></script>
+</body>
+</html>
